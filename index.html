@@ -851,6 +851,216 @@
             </div>
           </section>
 
+          <!-- Backend Side Project (In Progress) -->
+          <section class="mb-10">
+            <h2
+              class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
+            >
+              Side Project
+            </h2>
+
+            <div class="space-y-6">
+              <div
+                class="bg-white border border-gray-100 shadow-sm rounded-xl p-6"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2"
+                >
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-900">
+                      운동 루틴 추천 서비스
+                    </h3>
+                    <p class="text-blue-600 font-medium">
+                      Full-Stack Developer
+                    </p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-100"
+                    >
+                      In Progress
+                    </span>
+                    <span
+                      class="text-sm text-gray-500 font-mono bg-gray-100 px-2 py-1 rounded h-fit"
+                    >
+                      2025.12 - 현재 (진행중)
+                    </span>
+                  </div>
+                </div>
+
+                <p class="text-gray-600 mt-3 leading-relaxed text-sm">
+                  실무에서 백엔드 운영 경험은 없지만, 프론트엔드에서 반복적으로
+                  겪었던 “상태/데이터 불일치, 인증, 입력 흐름 안정화” 문제를
+                  백엔드 관점에서도 해결해보기 위해 NestJS 기반으로 API 서버를
+                  설계·구현하고 있습니다.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-4">
+                  <span
+                    class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                    >NestJS</span
+                  >
+                  <span
+                    class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                    >Prisma</span
+                  >
+                  <span
+                    class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                    >PostgreSQL</span
+                  >
+                  <span
+                    class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                    >Docker Compose</span
+                  >
+                  <span
+                    class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                    >JWT Auth</span
+                  >
+                  <span
+                    class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                    >Swagger(OpenAPI)</span
+                  >
+                </div>
+
+                <div class="mt-5 space-y-4">
+                  <div
+                    class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                  >
+                    <h4
+                      class="font-semibold text-gray-800 mb-2 flex items-center"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                      ></span>
+                      인증/권한 및 세션 전략 (NextAuth)
+                    </h4>
+                    <ul class="list-none space-y-1.5 ml-1 mb-2">
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        NextAuth 기반으로 로그인/세션을 구성하고, 서버에서
+                        발급한 Access Token을 세션에 연결해 API 요청에 일관되게
+                        적용
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        사용자/역할(Role) 기준으로 API 접근 제어를 분리하고,
+                        인증 실패/만료 등 예외 케이스를 공통 응답 규격으로
+                        정리해 프론트엔드에서 예측 가능하게 처리
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                  >
+                    <h4
+                      class="font-semibold text-gray-800 mb-2 flex items-center"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                      ></span>
+                      문서화 및 API 계약 관리
+                    </h4>
+                    <ul class="list-none space-y-1.5 ml-1 mb-2">
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        Swagger(OpenAPI) 기반으로 엔드포인트/요청·응답 스키마를
+                        문서화해, 프론트엔드와의 계약(Contract)을 명확히 유지
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        DTO 단위로 입력 검증 규칙과 에러 응답 형태를 정리해,
+                        실패 케이스가 문서에도 동일하게 노출되도록 구성
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        기능 확장 시 스펙 변경 영향 범위를 빠르게 파악할 수
+                        있도록 API 그룹/태그를 기준으로 문서를 구조화
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                  >
+                    <h4
+                      class="font-semibold text-gray-800 mb-2 flex items-center"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                      ></span>
+                      데이터 모델링 및 API 설계
+                    </h4>
+
+                    <ul class="list-none space-y-1.5 ml-1 mb-2">
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        Prisma로 사용자, 인바디 기록, 1RM 기록, 루틴 템플릿/세션
+                        모델을 설계하고 마이그레이션 기반으로 변경 이력을 관리
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        DTO 검증(Validation)과 에러 응답 규격화를 통해
+                        프론트엔드에서 예측 가능한 형태로 실패/경계 케이스를
+                        처리하도록 구성
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        “입력(사용자 프로필/인바디/1RM) → 추천 로직 → 주간 루틴
+                        생성” 흐름을 분리하기 위해, 운동 처방을
+                        <strong>템플릿(재사용 가능한 설계도)</strong>과
+                        <strong>실제 수행 기록(세션/로그)</strong>으로 나눠
+                        모델링
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        템플릿은 요일/목표(체지방 감소·근육
+                        성장)/경력(입문·중급·숙련)/앵커 리프트(S/B/D/OHP)
+                        기준으로 구성하고, 각 운동은
+                        <strong
+                          >강도 범위(pctMin~pctMax), 반복 범위(repsMin~repsMax),
+                          RIR 범위</strong
+                        >를 가진 “규칙 단위”로 정의
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        바벨/덤벨/머신/맨몸 등
+                        <strong>Load Method</strong> 기준으로 처방 값을 다르게
+                        적용할 수 있도록 확장 여지를 두어 (예: BODYWEIGHT는
+                        시간/횟수 중심), 추천 로직과 데이터 모델이 함께 흔들리지
+                        않도록 설계
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="mt-2 pt-3 border-t border-slate-200">
+                    <p class="text-sm text-gray-600">
+                      <span class="font-semibold text-gray-800">GitHub:</span>
+                      <a
+                        href="https://github.com/yg1110/REPO_NAME"
+                        class="text-blue-700 underline underline-offset-2 hover:text-blue-900"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        https://github.com/yg1110/RMancer
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <!-- Education & Certificates -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <section class="mb-10">
