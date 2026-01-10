@@ -42,12 +42,13 @@
               정영길
             </h1>
             <p class="text-xl text-slate-300 font-light mb-8 leading-relaxed">
-              <span class="text-blue-400 font-semibold">
-                React 기반 웹 서비스에서 사용자 화면 구현과 상태 관리, API
-                연동을 중심으로 실제 서비스 개선 경험을 쌓아온 프론트엔드
-                개발자</span
-              >
-              입니다.
+              <span class="text-blue-400 font-semibold">React/TypeScript</span>
+              기반 웹 서비스에서<br />
+              <span class="text-blue-400 font-semibold"
+                >전환 핵심 플로우 안정화</span
+              >와 <span class="text-blue-400 font-semibold">성능 최적화</span>를
+              중심으로,<br />
+              상태 관리와 API 연동 구조를 개선해 온 프론트엔드 개발자입니다.
             </p>
 
             <div
@@ -103,10 +104,11 @@
             <div class="space-y-6">
               <div class="prose prose-slate text-gray-700 leading-relaxed">
                 <p>
-                  <strong
-                    >"4년8개월의 프론트엔드 개발 경험을 바탕으로, 혁신적인
-                    사용자 경험을 창출하는 데 기여하겠습니다."</strong
-                  >
+                  <strong>
+                    4년 8개월 동안 React/TypeScript 기반 웹 서비스에서 전환 핵심
+                    플로우 안정화와 성능 최적화를 중심으로 문제를 정의하고
+                    개선해 온 프론트엔드 개발자입니다.
+                  </strong>
                 </p>
                 <p class="mt-3">
                   <strong class="text-gray-900"
@@ -124,15 +126,6 @@
                   복잡한 비즈니스 로직은 Custom Hooks로 추상화해 컴포넌트는
                   표현에만 집중하도록 설계합니다. Storybook 기반 디자인 시스템을
                   구축해 컴포넌트 재사용성과 유지보수성을 높였습니다.
-                </p>
-                <p class="mt-3">
-                  <strong class="text-gray-900"
-                    >비즈니스 임팩트와 지표 개선</strong
-                  >을 추적합니다. PostHog를 도입해 사용자 행동 데이터를 수집하고
-                  코호트 분석을 통해 전환율 개선 지점을 도출했습니다. Cursor
-                  AI를 활용한 워크플로우로 마크업 시간을 50% 이상 절감하고,
-                  비즈니스 로직 고도화에 집중했습니다. CodePush와 WebView 구조로
-                  장애 대응 시간을 1일 이내로 단축했습니다.
                 </p>
                 <p class="mt-3">
                   <strong class="text-gray-900">협업과 문서화</strong>를 통해 팀
@@ -243,12 +236,12 @@
                   </h3>
                   <div class="flex flex-wrap gap-2">
                     <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md Tools font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      class="inline-flex items-center px-3 py-1.5 rounded-md font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                     >
                       Cursor AI
                     </span>
                     <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md Tools font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      class="inline-flex items-center px-3 py-1.5 rounded-md font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >Jira/Slack/Git</span
                     >
                     <span
@@ -452,7 +445,21 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          입력 정보(UI State)와 저장 데이터(Server State) 분리
+                          입력 정보(UI State)와 저장 데이터(Server State)를
+                          분리해 역할/책임을 고립
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          중간 스텝 저장은 write 빈도·직렬화 비용·동기화
+                          복잡도를 키워 최종 제출 시점에 persist하도록
+                          트레이드오프를 선택
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          저장 데이터에는 민감정보를 포함하지 않고, 저장
+                          범위/만료 정책을 제한해 리스크를 관리
                         </li>
                       </ul>
 
@@ -460,7 +467,7 @@
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800">
-                            결제 왕복 이후에도 작성 내용이 유지되도록 하여
+                            결제 왕복 이후에도 작성 내용이 유지되도록 해
                             재작성/이탈 리스크를 제거하고 작성 흐름을 안정화
                           </span>
                         </p>
@@ -484,13 +491,15 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          팝업·버튼·입력 UI 통합 및 동작 기준 정리
+                          팝업·버튼·입력 컴포넌트군을 표준화하고
+                          variant/size/disabled/loading 등 동작 규칙을 문서화
                         </li>
 
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          협업 커뮤니케이션 비용 절감
+                          디자이너/기획자와 “정의된 UI 스펙” 기반으로
+                          커뮤니케이션하여 수정 사이클 비용 절감
                         </li>
                       </ul>
 
@@ -521,14 +530,21 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          Figma 시안의 레이아웃과 속성을 분석하여 큰 틀의 UI
-                          구조를 선제적으로 생성한 뒤, 컴포넌트 단위로 세부
-                          조정하여 개발 리드타임 단축
+                          Figma 시안에서 반복 레이아웃/스타일링 초안을 빠르게
+                          생성하고, 컴포넌트 분해 및 인터랙션 로직을 중심으로
+                          후속 정교화
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          마크업 시간 50% 이상 절감
+                          접근성/반응형/상태 변화 케이스는 체크리스트로 직접
+                          검수하여 품질을 유지
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          마크업 소요 시간 50% 이상 절감(동일 유형 화면 반복
+                          구현 기준)
                         </li>
                       </ul>
 
@@ -607,12 +623,16 @@
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        SSG / SSR / ISR / CSR 전략적 구분 적용
+                        페이지 목적(SEO/개인화)과 데이터 변경 주기 기준으로
+                        렌더링 전략을 분리: 상세/콘텐츠는 ISR, 로그인 전용
+                        통계는 SSR, 상호작용 중심 화면은 CSR
                       </li>
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        데이터 캐싱을 통한 중복 API 호출 제거
+                        React Query 기반 queryKey 표준화 및 캐싱/무효화 규칙
+                        정리로 중복 API 호출을 제거하고 화면 전환 체감 성능을
+                        개선
                       </li>
                     </ul>
 
@@ -620,7 +640,8 @@
                       <p class="text-sm font-semibold text-blue-700 mt-2">
                         🚀 Impact:
                         <span class="font-medium text-gray-800">
-                          초기 페이지 로딩 시간 단축 및 서버 부하 감소
+                          초기 로딩 지연을 개선하고 중복 요청을 줄여 서버 부하를
+                          완화(웹바이탈/Lighthouse 및 서버 로그 기반으로 확인)
                         </span>
                       </p>
                     </div>
@@ -644,20 +665,21 @@
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        지도 이동 시마다 데이터가 자동으로 다시 조회되며 화면
-                        깜빡임과 마커 중복 렌더링 문제가 발생
+                        지도 이동/줌 이벤트마다 자동 재조회가 발생해 깜빡임과
+                        마커 중복 렌더링 문제가 발생
                       </li>
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        사용자의 명시적인 동작에 따라 데이터 요청이 이루어지도록
-                        흐름을 정리
+                        dragend/zoom_changed 이후 디바운스 처리 및 “검색” 트리거
+                        기반으로 요청 타이밍을 통제하여 불필요한 재요청을 감소
                       </li>
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        이미 표시된 마커는 재사용하도록 처리하고, 지도 관련
-                        로직을 분리해 예기치 않은 화면 튐 현상 제거
+                        마커는 diff 기반으로 업데이트(기존 마커 재사용/필요
+                        마커만 추가·제거)하고, 지도 렌더링 로직을 모듈화해 화면
+                        튐 현상을 제거
                       </li>
                     </ul>
 
