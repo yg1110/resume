@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -51,7 +51,8 @@
               >까지<br />
               <span class="text-blue-400 font-semibold"
                 >핵심 UI 플로우 안정화</span
-              >와 <span class="text-blue-400 font-semibold">성능 최적화</span>로 전환/체감속도를 개선해 온 소프트웨어 개발자(4년+)입니다.
+              >와 <span class="text-blue-400 font-semibold">성능 최적화</span>로
+              전환/체감속도를 개선해 온 소프트웨어 개발자(4년+)입니다.
             </p>
 
             <div
@@ -444,146 +445,7 @@
 
                   <div class="space-y-4">
                     <!-- Achievement 1.1 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        핵심 요청 흐름에서 입력이 끊기지 않도록 구조 개선
-                      </h4>
 
-                      <ul class="list-none space-y-1.5 ml-1 mb-2">
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          구독 결제 이동/복귀 시
-                          <strong>완전 새로고침으로 폼 상태가 초기화</strong
-                          >되는 문제를 분석하고, 결제 왕복 환경에서도 작성
-                          연속성이 유지되도록 설계
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          입력 정보(UI State)와 저장 데이터(Server State)를
-                          분리해 역할/책임을 고립
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          중간 스텝 저장은 write 빈도·직렬화 비용·동기화
-                          복잡도를 키워 최종 제출 시점에 persist하도록
-                          트레이드오프를 선택
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          저장 데이터에는 민감정보를 포함하지 않고, 저장
-                          범위/만료 정책을 제한해 리스크를 관리
-                        </li>
-                      </ul>
-
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            결제 왕복 이후에도 작성 내용이 유지되도록 해
-                            재작성/이탈 리스크를 제거하고 작성 흐름을 안정화
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Achievement 1.2 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        UI 동작 표준화 및 Storybook 기반 공통 컴포넌트 정비
-                      </h4>
-
-                      <ul class="list-none space-y-1.5 ml-1 mb-2">
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          팝업·버튼·입력 컴포넌트군을 표준화하고
-                          variant/size/disabled/loading 등 동작 규칙을 문서화
-                        </li>
-
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          디자이너/기획자와 “정의된 UI 스펙” 기반으로
-                          커뮤니케이션하여 수정 사이클 비용 절감
-                        </li>
-                      </ul>
-
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            유지보수 부담 감소 및 신규 화면 개발 속도 향상
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Achievement 1.3 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        사용자 행동 데이터 기반으로 서비스 이용 흐름 분석 체계
-                        정비
-                      </h4>
-
-                      <ul
-                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                      >
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          사용자 행동 흐름을 더 직관적으로 보기 위해
-                          <strong>PostHog</strong>를 도입하고, 기본 제공되는
-                          자동 이벤트 수집 기능을 활용해 페이지 이동·클릭 등
-                          주요 행동 데이터를 수집
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          특정 행동 패턴을 기준으로
-                          <strong>코호트(Cohort)</strong>를 생성해 탐색만 하고
-                          전환하지 않은 사용자, 특정 기능을 반복 사용하는
-                          사용자군 등을 구분
-                        </li>
-                      </ul>
-
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700 mt-2">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            사용자 행동 흐름을 운영 관점에서 구분해 볼 수 있는
-                            기준 마련, 감이 아닌 데이터 기반으로 실무 의사결정에
-                            참고 지표로 활용
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Achievement 1.4 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -622,7 +484,236 @@
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >비즈니스 로직 고도화에 집중하여 전체 코드 품질 향상
+                            >초기 화면 개발 리드타임 단축 및 요구사항 변경에
+                            대한 대응 속도 향상
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.2 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        UI 동작 표준화 및 Storybook 기반 공통 컴포넌트 정비
+                        (레거시 MUI 디자인 시스템 점진 전환)
+                      </h4>
+
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          기존 화면에 혼재된 MUI 컴포넌트/스타일을 Storybook
+                          기반 디자인 시스템으로 단계적으로 마이그레이션하여 UI
+                          일관성과 유지보수성을 개선
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          팝업·버튼·입력 컴포넌트군을 표준화하고
+                          variant/size/disabled/loading 등 동작 규칙을 문서화
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          레거시 화면은 “전면 교체”가 아닌 신규/수정 화면부터
+                          우선 적용하는 전략으로 전환 리스크를 최소화하고 점진
+                          확산
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          디자이너/기획자와 “정의된 UI 스펙” 기반으로
+                          커뮤니케이션하여 수정 사이클 비용 절감
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            유지보수 부담 감소 및 신규 화면 개발 속도 향상
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.3 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        레이아웃 시프트 최소화 및 UX 안정화를 위한 화면
+                        개선(애니메이션 적용 포함)
+                      </h4>
+
+                      <ul
+                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
+                      >
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          로딩/데이터 갱신/이미지 렌더링 과정에서 발생하는
+                          레이아웃 시프트로 사용자가 화면을 “튕김” 없이 보지
+                          못하는 문제를 식별하고, UI 안정성 개선 작업을 수행
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          Skeleton/Placeholder 영역을 고정하고 컴포넌트
+                          높이·간격을 사전 확보하는 방식으로 렌더링 전후
+                          레이아웃 변화 폭을 줄여, 스크롤/클릭 동선이 깨지지
+                          않도록 수정
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          전환 구간(모달 오픈, 리스트 갱신, 탭 전환 등)에
+                          자연스러운 애니메이션을 적용하되, 과도한 모션을 피하고
+                          상태 변화가 명확히 인지되도록 인터랙션을 정리
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          화면 변경 시 발생 가능한 UX 회귀를 줄이기 위해 적용
+                          구간을 기준화하고, 재사용 가능한 패턴으로 정리하여
+                          신규/수정 화면에도 확산 가능하게 구성
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            화면 안정성 향상으로 사용자 체감 불편을 줄이고, 핵심
+                            동선에서의 이탈/오조작 리스크를 감소
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.4 -->
+
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        사용자 행동 데이터 기반으로 서비스 이용 흐름 분석 체계
+                        정비
+                      </h4>
+
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          화면 개편 이후에도 수정되지 않은 GA 이벤트
+                          트래킹(레거시 코드)로 인해 사용자 행동 데이터의
+                          신뢰도가 떨어지는 문제를 진단하고, 분석 체계를 재정비
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          입력 정보(UI State)와 저장 데이터(Server State)를
+                          분리해 역할/책임을 고립
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          PostHog를 도입하며 이벤트 설계(이벤트명/속성/수집
+                          지점)를 정리하고, 주요 이용 흐름을 코호트 기반으로
+                          정확히 수집·분석할 수 있도록 기반 구축
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          단순 지표 조회를 넘어 퍼널/세그먼트 관점에서 흐름을
+                          해석할 수 있게 정리하여, 제품 개선 논의를 “감”이 아닌
+                          근거 데이터 중심으로 전환
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          운영·개발 관점에서 이벤트 관리 기준을 명확히 해 화면
+                          변경 시 추적 누락/불일치가 재발하지 않도록 유지보수
+                          관리를 용이하게 함
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            데이터 신뢰도 향상으로 전환/이탈 구간을 정확히
+                            파악하고, 개선 우선순위 결정 및 실험/개선 사이클의
+                            효율을 높임
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.5 -->
+
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        UI State / Server State 분리 설계로 상태 관리 책임 정립
+                      </h4>
+
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          입력값, 임시 선택, 모달/탭 등 화면 상호작용 상태(UI
+                          State)와 API 기반 저장·조회 데이터(Server State)가
+                          뒤섞여 발생하던 복잡도/버그 리스크를 식별하고, 역할
+                          기준으로 상태를 분리하는 구조를 설계
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          UI 컴포넌트는 표현과 상호작용에 집중시키고, 데이터
+                          조회/갱신·검증·부수효과 등 비즈니스 로직은 커스텀
+                          훅으로 분리해 관심사(Concerns)를 명확히 분리
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          UI State는 화면 단위로 국소화하고, Server State는
+                          캐싱/갱신 정책을 포함해 단일 책임으로 관리되도록
+                          정리하여 데이터 동기화/재요청/로딩 처리 흐름을 예측
+                          가능하게 개선
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            상태·UI·로직 책임 분리로 버그 원인 범위를 축소하고,
+                            화면 복잡도와 유지보수 비용을 낮춰 신규 기능 확장 및
+                            변경 대응 속도를 향상
                           </span>
                         </p>
                       </div>
@@ -691,7 +782,7 @@
                       <span
                         class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                       ></span>
-                      서비스 성능 개선 및 렌더링 전략 최적화
+                      서비스 성능 개선 및 렌더링 전략적 구분 적용
                     </h4>
 
                     <ul
@@ -707,9 +798,8 @@
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        React Query 기반 queryKey 표준화 및 캐싱/무효화 규칙
-                        정리로 중복 API 호출을 제거하고 화면 전환 체감 성능을
-                        개선
+                        React Query 캐싱 중복 API 호출을 제거하고 화면 전환 체감
+                        성능을 개선
                       </li>
                     </ul>
 
@@ -718,7 +808,7 @@
                         🚀 Impact:
                         <span class="font-medium text-gray-800">
                           초기 로딩 지연을 개선하고 중복 요청을 줄여 서버 부하를
-                          완화(웹바이탈/Lighthouse 및 서버 로그 기반으로 확인)
+                          완화
                         </span>
                       </p>
                     </div>
@@ -801,8 +891,8 @@
                       <p class="text-sm font-semibold text-blue-700 mt-2">
                         🚀 Impact:
                         <span class="font-medium text-gray-800">
-                          장애 발생 시 <strong>1일 이내 대응</strong> 가능,
-                          콘텐츠·기능 수정 배포 주기 단축
+                          장애 발생 시 1일 이내 대응 가능, 콘텐츠·기능 수정 배포
+                          주기 단축
                         </span>
                       </p>
                     </div>
@@ -871,21 +961,66 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        앱 유지보수 및 신규 기능 개발
+                        훈련사 일지 기능 개발(RN)
                       </h4>
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          React Native 기반의 앱 안정성 개선
+                          훈련사 일지 작성/조회 플로우를 React Native에서
+                          구현(화면 구성, 상태 관리, 입력/검증, API 연동 등).
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          운영 효율화를 위한 사내 백오피스(Admin) 기능 확장 및
-                          UI 개선
+                          운영/사용자 관점에서 작성 동선(입력 저장/수정 확인)의
+                          UX를 안정화.
                         </li>
                       </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >훈련 기록 관리 기능의 사용성 확보 및 앱 기능 범위
+                            확장
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        반려동물 동반 호텔 기능 개발(RN)
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          반려동물 동반 가능 호텔 탐색/상세, 예약/문의 관련 화면
+                          및 사용자 흐름을 React Native에서 구현.
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          리스트/상세 화면 간 데이터 전달, 필터/정렬 등 탐색
+                          UX를 개선.
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >신규 카테고리(동반 호텔) 기능을 앱 내로 확장하여
+                            사용자 탐색 경험 강화
+                          </span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -913,9 +1048,7 @@
                   </div>
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                    FPGA 장비와 안테나를 통해 전파 데이터를 실시간으로 수집하고,
-                    이를 기반으로 전파 모니터링 및 방향 탐지 서비스를 제공하는
-                    프로그램 개발
+                    전파 탐지 프로그램(EdgeRF) 프로그램 개발
                   </p>
 
                   <div class="flex flex-wrap gap-2 mb-4">
@@ -929,32 +1062,40 @@
                     >
                   </div>
 
-                  <div class="space-y-4">
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                  <div
+                    class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                  >
+                    <h4
+                      class="font-semibold text-gray-800 mb-2 flex items-center"
                     >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      <span
+                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                      ></span>
+                      전파 탐지 프로그램(EdgeRF) 프로그램 개발
+                    </h4>
+                    <ul class="list-none space-y-1.5 ml-1 mb-2">
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        EdgeRF(전파데이터 수집) 프로그램 개발
-                      </h4>
-                      <ul class="list-none space-y-1.5 ml-1 mb-2">
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          WPF(C#) 기반으로 전파 데이터 모니터링 프로그램 UI를
-                          개발
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          운영자가 데이터를 빠르게 해석할 수 있도록 중심 화면을
-                          구성
-                        </li>
-                      </ul>
+                        FPGA장비로부터 전달되는 전파 데이터를 애플리케이션에서
+                        수신하여 화면에 표시하는 모니터링 UI 구현(WPF/C#).
+                      </li>
+                      <li
+                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      >
+                        운영자가 데이터를 빠르게 해석할 수 있도록 시각화 중심의
+                        화면 구성(대시보드/그래프/상태 표시 등) 및 사용자 흐름
+                        정리.
+                      </li>
+                    </ul>
+                    <div class="mt-2 pt-2 border-t border-slate-200">
+                      <p class="text-sm font-semibold text-blue-700">
+                        🚀 Impact:
+                        <span class="font-medium text-gray-800"
+                          >실시간/준실시간 모니터링 환경에서 운영 관점의
+                          가시성과 데이터 해석 속도 향상
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
