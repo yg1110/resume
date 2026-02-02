@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -445,7 +445,6 @@
 
                   <div class="space-y-4">
                     <!-- Achievement 1.1 -->
-
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -455,38 +454,29 @@
                         <span
                           class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"
                         ></span>
-                        AI 어시스턴트(Cursor) 기반의 신속한 화면 프로토타이핑
+                        구독 유료화 결제 연동(E2E, FE 관점)
                       </h4>
-
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          Figma 시안에서 반복 레이아웃/스타일링 초안을 빠르게
-                          생성하고, 컴포넌트 분해 및 인터랙션 로직을 중심으로
-                          후속 정교화
+                          구독 상품/상태 조회 → 결제 팝업(토스페이먼츠) 호출 →
+                          결과 처리 → 서버 동기화 흐름을 연결
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          접근성/반응형/상태 변화 케이스는 체크리스트로 직접
-                          검수하여 품질을 유지
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          마크업 소요 시간 50% 이상 절감(동일 유형 화면 반복
-                          구현 기준)
+                          성공/실패/취소 등 결제 결과 케이스에 따른 UX와 구독
+                          상태 기반 접근 제어/노출 정책을 정리
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >초기 화면 개발 리드타임 단축 및 요구사항 변경에
-                            대한 대응 속도 향상
-                          </span>
+                            >유료화 도입 이후 결제 흐름의 예외 케이스까지 포함한
+                            운영 안정성을 확보</span
+                          >
                         </p>
                       </div>
                     </div>
@@ -501,45 +491,31 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        UI 동작 표준화 및 Storybook 기반 공통 컴포넌트 정비
-                        (레거시 MUI 디자인 시스템 점진 전환)
+                        UI 표준화 및 Storybook 기반 공통 컴포넌트 정비(레거시
+                        점진 전환)
                       </h4>
-
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          기존 화면에 혼재된 MUI 컴포넌트/스타일을 Storybook
-                          기반 디자인 시스템으로 단계적으로 마이그레이션하여 UI
-                          일관성과 유지보수성을 개선
+                          버튼/입력/팝업 등 컴포넌트를
+                          variant/size/disabled/loading 규격으로 표준화하고
+                          문서화
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          팝업·버튼·입력 컴포넌트군을 표준화하고
-                          variant/size/disabled/loading 등 동작 규칙을 문서화
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          레거시 화면은 “전면 교체”가 아닌 신규/수정 화면부터
-                          우선 적용하는 전략으로 전환 리스크를 최소화하고 점진
-                          확산
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          디자이너/기획자와 “정의된 UI 스펙” 기반으로
-                          커뮤니케이션하여 수정 사이클 비용 절감
+                          “전면 교체” 대신 신규/수정 화면부터 우선 적용해 전환
+                          리스크를 줄이고 점진 확산
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            유지보수 부담 감소 및 신규 화면 개발 속도 향상
-                          </span>
+                          <span class="font-medium text-gray-800"
+                            >UI 일관성/재사용성 향상으로 유지보수 부담 감소 및
+                            신규 화면 개발 속도 향상</span
+                          >
                         </p>
                       </div>
                     </div>
@@ -554,51 +530,29 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        레이아웃 시프트 최소화 및 UX 안정화를 위한 화면
-                        개선(애니메이션 적용 포함)
+                        UI State / Server State 분리로 상태 관리 책임 정립
                       </h4>
-
-                      <ul
-                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                      >
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          로딩/데이터 갱신/이미지 렌더링 과정에서 발생하는
-                          레이아웃 시프트로 사용자가 화면을 “튕김” 없이 보지
-                          못하는 문제를 식별하고, UI 안정성 개선 작업을 수행
+                          React Query로 서버 상태 캐싱/동기화를 단일 책임으로
+                          관리하고 UI 상태는 화면 단위로 국소화
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          Skeleton/Placeholder 영역을 고정하고 컴포넌트
-                          높이·간격을 사전 확보하는 방식으로 렌더링 전후
-                          레이아웃 변화 폭을 줄여, 스크롤/클릭 동선이 깨지지
-                          않도록 수정
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          전환 구간(모달 오픈, 리스트 갱신, 탭 전환 등)에
-                          자연스러운 애니메이션을 적용하되, 과도한 모션을 피하고
-                          상태 변화가 명확히 인지되도록 인터랙션을 정리
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          화면 변경 시 발생 가능한 UX 회귀를 줄이기 위해 적용
-                          구간을 기준화하고, 재사용 가능한 패턴으로 정리하여
-                          신규/수정 화면에도 확산 가능하게 구성
+                          비즈니스 로직을 Custom Hook으로 분리해 컴포넌트는
+                          표현/상호작용에 집중하도록 구조화
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                        <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            화면 안정성 향상으로 사용자 체감 불편을 줄이고, 핵심
-                            동선에서의 이탈/오조작 리스크를 감소
-                          </span>
+                          <span class="font-medium text-gray-800"
+                            >버그 원인 범위를 축소하고 변경 대응/운영 이슈 처리
+                            비용을 절감</span
+                          >
                         </p>
                       </div>
                     </div>
@@ -614,61 +568,34 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        사용자 행동 데이터 기반으로 서비스 이용 흐름 분석 체계
-                        정비
+                        레이아웃 시프트 최소화 및 전환 UX 안정화
                       </h4>
-
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          화면 개편 이후에도 수정되지 않은 GA 이벤트
-                          트래킹(레거시 코드)로 인해 사용자 행동 데이터의
-                          신뢰도가 떨어지는 문제를 진단하고, 분석 체계를 재정비
+                          Skeleton/Placeholder 영역을 고정하고 높이·간격을
+                          선확보해 렌더링 전후 레이아웃 변동을 최소화
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          입력 정보(UI State)와 저장 데이터(Server State)를
-                          분리해 역할/책임을 고립
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          PostHog를 도입하며 이벤트 설계(이벤트명/속성/수집
-                          지점)를 정리하고, 주요 이용 흐름을 코호트 기반으로
-                          정확히 수집·분석할 수 있도록 기반 구축
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          단순 지표 조회를 넘어 퍼널/세그먼트 관점에서 흐름을
-                          해석할 수 있게 정리하여, 제품 개선 논의를 “감”이 아닌
-                          근거 데이터 중심으로 전환
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          운영·개발 관점에서 이벤트 관리 기준을 명확히 해 화면
-                          변경 시 추적 누락/불일치가 재발하지 않도록 유지보수
-                          관리를 용이하게 함
+                          모달/탭/리스트 갱신 등 전환 구간 인터랙션을 기준화해
+                          UX 회귀를 줄이고 재사용 가능한 패턴으로 정리
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            데이터 신뢰도 향상으로 전환/이탈 구간을 정확히
-                            파악하고, 개선 우선순위 결정 및 실험/개선 사이클의
-                            효율을 높임
-                          </span>
+                          <span class="font-medium text-gray-800"
+                            >핵심 동선에서의 이탈/오조작 리스크를 줄이고 체감
+                            안정성을 향상</span
+                          >
                         </p>
                       </div>
                     </div>
 
                     <!-- Achievement 1.5 -->
-
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -678,43 +605,29 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        UI State / Server State 분리 설계로 상태 관리 책임 정립
+                        사용자 행동 데이터 기반 분석 체계 정비(PostHog)
                       </h4>
-
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          입력값, 임시 선택, 모달/탭 등 화면 상호작용 상태(UI
-                          State)와 API 기반 저장·조회 데이터(Server State)가
-                          뒤섞여 발생하던 복잡도/버그 리스크를 식별하고, 역할
-                          기준으로 상태를 분리하는 구조를 설계
+                          레거시 GA 이벤트 누락/불일치 문제를 진단하고
+                          이벤트명/속성/수집 지점을 정리해 추적 기준을 표준화
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          UI 컴포넌트는 표현과 상호작용에 집중시키고, 데이터
-                          조회/갱신·검증·부수효과 등 비즈니스 로직은 커스텀
-                          훅으로 분리해 관심사(Concerns)를 명확히 분리
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          UI State는 화면 단위로 국소화하고, Server State는
-                          캐싱/갱신 정책을 포함해 단일 책임으로 관리되도록
-                          정리하여 데이터 동기화/재요청/로딩 처리 흐름을 예측
-                          가능하게 개선
+                          코호트/퍼널/세그먼트 관점으로 주요 플로우를 재구성해
+                          전환·이탈 구간을 정확히 분석 가능하게 개선
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            상태·UI·로직 책임 분리로 버그 원인 범위를 축소하고,
-                            화면 복잡도와 유지보수 비용을 낮춰 신규 기능 확장 및
-                            변경 대응 속도를 향상
-                          </span>
+                          <span class="font-medium text-gray-800"
+                            >데이터 신뢰도를 높여 개선 우선순위/실험 설계를
+                            데이터 기반으로 전환</span
+                          >
                         </p>
                       </div>
                     </div>
@@ -754,9 +667,10 @@
                   </div>
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                    남자들을 위한 탈모/성형/시술 미용의료 플랫폼 '미남이오' 앱과
-                    웹 개발 지역, 기기 조건별 제모기기와 병원을 찾을수 있는
-                    '제모데이' 웹 개발
+                    남성 미용의료 플랫폼 '미남이오' 앱/웹과 제모 탐색 서비스
+                    '제모데이' 웹을 개발했습니다.<br />
+                    렌더링 전략(SSR/CSR/ISR) 분리, 지도 UX 최적화, 운영 대응
+                    구조(CodePush)와 미리결제(PG) 연동을 수행했습니다.
                   </p>
 
                   <div class="flex flex-wrap gap-2 mb-4">
@@ -773,128 +687,174 @@
                       >TypeScript</span
                     >
                   </div>
-                  <div
-                    class="bg-slate-50 p-4 rounded-lg border border-slate-100"
-                  >
-                    <h4
-                      class="font-semibold text-gray-800 mb-2 flex items-center"
+                  <div class="space-y-4">
+                    <!-- Achievement 2.1 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
-                      <span
-                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                      ></span>
-                      서비스 성능 개선 및 렌더링 전략적 구분 적용
-                    </h4>
-
-                    <ul
-                      class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                    >
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
                       >
-                        페이지 목적(SEO/개인화)과 데이터 변경 주기 기준으로
-                        렌더링 전략을 분리: 상세/콘텐츠는 ISR, 로그인 전용
-                        통계는 SSR, 상호작용 중심 화면은 CSR
-                      </li>
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                      >
-                        React Query 캐싱 중복 API 호출을 제거하고 화면 전환 체감
-                        성능을 개선
-                      </li>
-                    </ul>
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        서비스 성능 개선 및 렌더링 전략적 구분 적용
+                      </h4>
 
-                    <div class="mt-2 pt-2 border-t border-slate-200">
-                      <p class="text-sm font-semibold text-blue-700 mt-2">
-                        🚀 Impact:
-                        <span class="font-medium text-gray-800">
-                          초기 로딩 지연을 개선하고 중복 요청을 줄여 서버 부하를
-                          완화
-                        </span>
-                      </p>
+                      <ul
+                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
+                      >
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          페이지 목적(SEO/개인화)과 데이터 변경 주기 기준으로
+                          렌더링 전략을 분리: 상세/콘텐츠는 ISR, 로그인 전용
+                          통계는 SSR, 상호작용 중심 화면은 CSR
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          React Query 캐싱 중복 API 호출을 제거하고 화면 전환
+                          체감 성능을 개선
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            초기 로딩 지연을 개선하고 중복 요청을 줄여 서버
+                            부하를 완화
+                          </span>
+                        </p>
+                      </div>
                     </div>
-                  </div>
-
-                  <div
-                    class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
-                  >
-                    <h4
-                      class="font-semibold text-gray-800 mb-2 flex items-center"
+                    <!-- Achievement 2.2 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
                     >
-                      <span
-                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                      ></span>
-                      병원 지도 화면 렌더링 최적화 및 사용자 경험 개선
-                    </h4>
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        병원 지도 화면 렌더링 최적화 및 사용자 경험 개선
+                      </h4>
 
-                    <ul
-                      class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                    >
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      <ul
+                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
                       >
-                        지도 이동/줌 이벤트마다 자동 재조회가 발생해 깜빡임과
-                        마커 중복 렌더링 문제가 발생
-                      </li>
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                      >
-                        dragend/zoom_changed 이후 디바운스 처리 및 “검색” 트리거
-                        기반으로 요청 타이밍을 통제하여 불필요한 재요청을 감소
-                      </li>
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                      >
-                        마커는 diff 기반으로 업데이트(기존 마커 재사용/필요
-                        마커만 추가·제거)하고, 지도 렌더링 로직을 모듈화해 화면
-                        튐 현상을 제거
-                      </li>
-                    </ul>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          지도 이동/줌 이벤트마다 자동 재조회가 발생해 깜빡임과
+                          마커 중복 렌더링 문제가 발생
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          dragend/zoom_changed 이후 디바운스 처리 및 “검색”
+                          트리거 기반으로 요청 타이밍을 통제하여 불필요한
+                          재요청을 감소
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          마커는 diff 기반으로 업데이트(기존 마커 재사용/필요
+                          마커만 추가·제거)하고, 지도 렌더링 로직을 모듈화해
+                          화면 튐 현상을 제거
+                        </li>
+                      </ul>
 
-                    <div class="mt-2 pt-2 border-t border-slate-200">
-                      <p class="text-sm font-semibold text-blue-700 mt-2">
-                        🚀 Impact:
-                        <span class="font-medium text-gray-800">
-                          지도 화면 반응성 개선 및 불필요한 API 호출 감소,
-                          사용자 지도 이용 만족도 향상
-                        </span>
-                      </p>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            지도 화면 반응성 개선 및 불필요한 API 호출 감소,
+                            사용자 지도 이용 만족도 향상
+                          </span>
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
-                  >
-                    <h4
-                      class="font-semibold text-gray-800 mb-2 flex items-center"
+                    <!-- Achievement 2.3 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
                     >
-                      <span
-                        class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                      ></span>
-                      앱 업데이트 및 장애 대응을 고려한 유지보수 구조 개선
-                    </h4>
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        앱 업데이트 및 장애 대응을 고려한 유지보수 구조 개선
+                      </h4>
 
-                    <ul
-                      class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
+                      <ul
+                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
+                      >
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          WebView 구조 적용으로 주요 화면 웹 관리
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          CodePush 도입으로 즉시 반영 환경 구축
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            장애 발생 시 1일 이내 대응 가능, 콘텐츠·기능 수정
+                            배포 주기 단축
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Achievement 2.4 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
                     >
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
                       >
-                        WebView 구조 적용으로 주요 화면 웹 관리
-                      </li>
-                      <li
-                        class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                      >
-                        CodePush 도입으로 즉시 반영 환경 구축
-                      </li>
-                    </ul>
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        토스페이먼츠 미리결제(PG) E2E 연동(FE 관점)
+                      </h4>
 
-                    <div class="mt-2 pt-2 border-t border-slate-200">
-                      <p class="text-sm font-semibold text-blue-700 mt-2">
-                        🚀 Impact:
-                        <span class="font-medium text-gray-800">
-                          장애 발생 시 1일 이내 대응 가능, 콘텐츠·기능 수정 배포
-                          주기 단축
-                        </span>
-                      </p>
+                      <ul
+                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
+                      >
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          결제 시작(prepare) → 결제 위젯 실행 → 결과
+                          수신(성공/실패) → 서버 confirm 호출 → 완료/후속 플로우
+                          동기화
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          결제 중단/실패/재시도 등 예외 케이스에 대한 UX 및 상태
+                          동기화 흐름을 정리
+                        </li>
+                      </ul>
+
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800">
+                            결제 예외 케이스를 포함한 안정적인 결제 플로우 운영
+                            기반을 확보
+                          </span>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -952,6 +912,7 @@
                   </div>
 
                   <div class="space-y-4">
+                    <!-- Achievement 3.1 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -987,6 +948,7 @@
                         </p>
                       </div>
                     </div>
+                    <!-- Achievement 3.2 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -1055,10 +1017,6 @@
                     <span
                       class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
                       >WPF</span
-                    >
-                    <span
-                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
-                      >JavaScript</span
                     >
                   </div>
 
