@@ -6,6 +6,57 @@
     <title>정영길 - SW Engineer Portfolio</title>
 
     <!-- Tailwind CSS (CDN) -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(12px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              floatSoft: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-4px)" },
+              },
+              pulseSoft: {
+                "0%, 100%": { transform: "scale(1)", opacity: "0.9" },
+                "50%": { transform: "scale(1.25)", opacity: "0.55" },
+              },
+            },
+            animation: {
+              "fade-in": "fadeIn 700ms ease-out both",
+              "fade-in-up": "fadeInUp 700ms ease-out both",
+              "float-soft": "floatSoft 3s ease-in-out infinite",
+              "pulse-soft": "pulseSoft 1.8s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .shine::after {
+        content: "";
+        position: absolute;
+        inset: -40%;
+        background: linear-gradient(
+          120deg,
+          transparent 40%,
+          rgba(255, 255, 255, 0.55) 50%,
+          transparent 60%
+        );
+        transform: translateX(-60%) rotate(10deg);
+        transition: transform 700ms ease;
+      }
+      .shine:hover::after {
+        transform: translateX(60%) rotate(10deg);
+      }
+    </style>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fonts -->
@@ -24,7 +75,9 @@
     </style>
   </head>
   <body>
-    <div class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+    <div
+      class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 motion-safe:animate-fade-in"
+    >
       <div
         class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden print-shadow-none print-max-w-none"
       >
@@ -98,7 +151,7 @@
 
         <div class="p-8 sm:p-12 space-y-12">
           <!-- Summary Section -->
-          <section class="mb-10">
+          <section class="mb-10 reveal">
             <h2
               class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
             >
@@ -147,7 +200,7 @@
           </section>
 
           <!-- Tech Stack -->
-          <section class="mb-10">
+          <section class="mb-10 reveal">
             <h2
               class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
             >
@@ -266,7 +319,7 @@
           </section>
 
           <!-- Philosophy Section -->
-          <section class="mb-10">
+          <section class="mb-10 reveal">
             <h2
               class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
             >
@@ -368,7 +421,7 @@
           </section>
 
           <!-- Work Experience -->
-          <section class="mb-10">
+          <section class="mb-10 reveal">
             <h2
               class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
             >
@@ -382,7 +435,7 @@
                   class="relative border-l-2 border-gray-200 pl-6 pb-8 last:pb-0"
                 >
                   <div
-                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm motion-safe:animate-pulse-soft"
                   ></div>
 
                   <div
@@ -668,9 +721,9 @@
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
                     남성 미용의료 플랫폼 '미남이오' 앱/웹과 제모 탐색 서비스
-                    '제모데이' 웹을 개발했습니다.<br />
+                    '제모데이' 웹 개발<br />
                     렌더링 전략(SSR/CSR/ISR) 분리, 지도 UX 최적화, 운영 대응
-                    구조(CodePush)와 미리결제(PG) 연동을 수행했습니다.
+                    구조(CodePush)와 미리결제(PG) 연동 수행.
                   </p>
 
                   <div class="flex flex-wrap gap-2 mb-4">
@@ -1062,7 +1115,7 @@
           </section>
 
           <!-- Backend Side Project (In Progress) -->
-          <section class="mb-10">
+          <section class="mb-10 reveal">
             <h2
               class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-3 flex items-center gap-3"
             >
@@ -1072,7 +1125,7 @@
 
             <div class="space-y-6">
               <div
-                class="bg-white border border-gray-100 shadow-sm rounded-3xl p-8 hover:shadow-lg transition-shadow"
+                class="bg-white border border-gray-100 shadow-sm rounded-3xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <div
                   class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 mb-6"
@@ -1544,7 +1597,7 @@
 
           <!-- Education & Certificates -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <section class="mb-10">
+            <section class="mb-10 reveal">
               <h2
                 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
               >
@@ -1568,7 +1621,7 @@
               </div>
             </section>
 
-            <section class="mb-10">
+            <section class="mb-10 reveal">
               <h2
                 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
               >
@@ -1595,6 +1648,37 @@
         <script>
           document.getElementById("year").textContent =
             new Date().getFullYear();
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+          // Scroll reveal
+          const reveals = document.querySelectorAll(".reveal");
+
+          // 초기 상태: 안 보이게
+          reveals.forEach((el) => {
+            el.classList.add(
+              "opacity-0",
+              "translate-y-3",
+              "transition-all",
+              "duration-700",
+              "ease-out"
+            );
+          });
+
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.remove("opacity-0", "translate-y-3");
+                  entry.target.classList.add("opacity-100", "translate-y-0");
+                  io.unobserve(entry.target); // 한 번만 실행
+                }
+              });
+            },
+            { threshold: 0.12 }
+          );
+
+          reveals.forEach((el) => io.observe(el));
         </script>
       </div>
     </div>
