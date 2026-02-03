@@ -670,8 +670,10 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          코호트/퍼널/세그먼트 관점으로 주요 플로우를 재구성해
-                          전환·이탈 구간을 정확히 분석 가능하게 개선
+                          <b>퍼널</b>로 어떤흐름에서 이탈하는지
+                          <b>세그먼트</b>로 어떤 사용자/환경에서 특히 심한지
+                          <b>코호트</b>로 개선/개편 이후에 실제로 좋아졌는지
+                          분석 가능하게 개선
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
@@ -722,7 +724,7 @@
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
                     남성 미용의료 플랫폼 '미남이오' 앱/웹과 제모 탐색 서비스
                     '제모데이' 웹 개발<br />
-                    렌더링 전략(SSR/CSR/ISR) 분리, 지도 UX 최적화, 운영 대응
+                    렌더링 전략(SSG/SSR/CSR/ISR) 분리, 지도 UX 최적화, 운영 대응
                     구조(CodePush)와 미리결제(PG) 연동 수행.
                   </p>
 
@@ -760,9 +762,12 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          페이지 목적(SEO/개인화)과 데이터 변경 주기 기준으로
-                          렌더링 전략을 분리: 상세/콘텐츠는 ISR, 로그인 전용
-                          통계는 SSR, 상호작용 중심 화면은 CSR
+                          페이지 목적(SEO/개인화)·데이터 변경 주기 기준으로
+                          렌더링 전략을 분리<br />
+                          약관/FAQ: <b>SSG</b><br />
+                          병원 리스트/상세(주기적 갱신): <b>ISR</b><br />
+                          로그인/권한 기반 평균시세·통계: <b>SSR</b><br />
+                          지도/필터(상호작용): <b>CSR</b>
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
@@ -878,7 +883,7 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        토스페이먼츠 미리결제(PG) E2E 연동(FE 관점)
+                        토스페이먼츠 결제(PG) E2E 연동(FE 관점)
                       </h4>
 
                       <ul
