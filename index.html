@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -95,17 +95,16 @@
               정영길
             </h1>
             <p class="text-xl text-slate-300 font-light mb-8 leading-relaxed">
-              <span class="text-blue-400 font-semibold">WPF</span> 기반 데스크톱
-              프로그램부터
-              <span class="text-blue-400 font-semibold"
-                >웹(React/TypeScript)</span
-              >·
-              <span class="text-blue-400 font-semibold">앱(React Native)</span
-              >까지<br />
+              사용자가 헤매지 않도록,
+              <span class="text-blue-400 font-semibold">직관적인 조작</span>과
+              <span class="text-blue-400 font-semibold">일관된 경험</span>을
+              설계하고<br />
               <span class="text-blue-400 font-semibold"
                 >핵심 UI 플로우 안정화</span
               >와 <span class="text-blue-400 font-semibold">성능 최적화</span>로
-              전환/체감속도를 개선해 온 소프트웨어 개발자(4년+)입니다.
+              전환/체감속도를 개선해 온<br />
+              <span class="text-blue-400 font-semibold">사용자 친화적</span> 웹
+              개발자(4년+)입니다.
             </p>
 
             <div
@@ -161,14 +160,19 @@
             <div class="space-y-6">
               <div class="prose prose-slate text-gray-700 leading-relaxed">
                 <p>
-                  <strong>WPF 기반 데스크톱 프로그램 개발을 시작으로</strong> UI
-                  중심 제품 개발을 이어오며, <strong>4년 8개월간</strong> 핵심
-                  UI 플로우의 안정화와 성능 최적화를 통해 문제를 정의하고 개선해
-                  왔습니다. 데스크톱(WPF)에서의
-                  <strong>데이터 시각화·모니터링 UI</strong> 경험과 함께,
-                  웹(React/TypeScript)·앱(React Native) 환경에서도
-                  <strong>일관된 사용자 경험과 유지보수성을 고려한 UI</strong>를
-                  구현해 왔습니다.
+                  컴퓨터공학 전공 후 삼성 청년 소프트웨어 아카데미(SSAFY)에서
+                  <strong>애자일 협업과 실무 개발 기본기</strong>를 다졌고, WPF
+                  개발을 시작으로 웹(React/Next)·앱(React Native)까지 확장하며
+                  4년 8개월간 프로덕션 서비스의 핵심 UI 플로우
+                  <strong>안정화</strong>와 <strong>성능 최적화</strong>로
+                  전환/체감속도를 개선해 왔습니다.<br />
+                </p>
+                <p class="mt-3">
+                  WPF 환경에서는
+                  <strong>실시간 데이터 수신 기반 모니터링·시각화</strong> UI를,
+                  웹/앱에서는
+                  <strong>사용자 흐름·상태(로딩/성공/실패)·전환 품질</strong>을
+                  기준으로 직관적이고 일관된 경험을 구현해 왔습니다.
                 </p>
                 <p class="mt-3">
                   <strong class="text-gray-900"
@@ -183,9 +187,8 @@
                   <strong class="text-gray-900">아키텍처와 설계 사고</strong>를
                   중시합니다. React Query로 서버 상태를 관리하고 Zustand는 UI
                   핵심 상태만 최소화해 데이터 동기화 이슈를 사전에 방지합니다.
-                  복잡한 비즈니스 로직은 Custom Hooks로 추상화해 컴포넌트는
-                  표현에만 집중하도록 설계합니다. Storybook 기반 디자인 시스템을
-                  구축해 컴포넌트 재사용성과 유지보수성을 높였습니다.
+                  복잡한 비즈니스 로직은 Custom Hook으로 추상화해 컴포넌트는
+                  표현에만 집중하도록 설계합니다.
                 </p>
                 <p class="mt-3">
                   <strong class="text-gray-900">협업과 문서화</strong>를 통해 팀
@@ -722,7 +725,7 @@
                     남성 미용의료 플랫폼 '미남이오' 앱/웹과 제모 탐색 서비스
                     '제모데이' 웹 개발<br />
                     렌더링 전략(SSG/SSR/CSR/ISR) 분리, 지도 UX 최적화, 운영 대응
-                    구조(CodePush)와 미리결제(PG) 연동 수행.
+                    구조(CodePush)와 결제(PG) 연동 수행.
                   </p>
 
                   <div class="flex flex-wrap gap-2 mb-4">
@@ -750,7 +753,7 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        서비스 성능 개선 및 렌더링 전략적 구분 적용
+                        서비스 성능 개선 및 캐싱/렌더링 비용 최적화
                       </h4>
 
                       <ul
@@ -759,18 +762,30 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          페이지 목적(SEO/개인화)·데이터 변경 주기 기준으로
-                          렌더링 전략을 분리<br />
-                          약관/FAQ: <b>SSG</b><br />
-                          병원 리스트/상세(주기적 갱신): <b>ISR</b><br />
-                          로그인/권한 기반 평균시세·통계: <b>SSR</b><br />
-                          지도/필터(상호작용): <b>CSR</b>
+                          페이지 목적(SEO/개인화)·데이터 변경 주기를 기준으로
+                          정적 성격의 화면은 <strong>SSG/ISR</strong>로 운영
+                          부담을 줄이고 응답 속도를 안정화 개인화·권한 기반
+                          영역은 <strong>SSR</strong>로 구현
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          React Query 캐싱 중복 API 호출을 제거하고 화면 전환
-                          체감 성능을 개선
+                          자주 이동하는 페이지는
+                          <strong>Next Link prefetch</strong>로 선로딩하여 클릭
+                          후 대기 체감을 축소
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          이미지가 많은 화면은
+                          <strong>레이지 로딩</strong>으로 초기 로딩 부담을 분산
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          React Query 캐싱으로 동일 데이터의 중복 호출을
+                          억제하고, 리페치 시점/규칙을 정리해 핵심 전환 구간의
+                          불필요한 네트워크/리렌더를 최소화
                         </li>
                       </ul>
 
@@ -842,7 +857,7 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        앱 업데이트 및 장애 대응을 고려한 유지보수 구조 개선
+                        앱 업데이트 및 장애 대응을 고려한 유지보수 구조 개선(RN)
                       </h4>
 
                       <ul
@@ -948,7 +963,7 @@
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
                     반려동물 플랫폼 '와요/펫플래닛'의 앱 및 내부 어드민 서비스를
-                    개발했습니다.
+                    개발.
                   </p>
 
                   <div class="flex flex-wrap gap-2 mb-4">
@@ -1084,7 +1099,7 @@
                       <span
                         class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                       ></span>
-                      전파 탐지 프로그램(EdgeRF) 프로그램 개발
+                      전파 탐지 프로그램(EdgeRF) 프로그램 개발(WPF)
                     </h4>
                     <ul class="list-none space-y-1.5 ml-1 mb-2">
                       <li
@@ -1671,7 +1686,7 @@
               "translate-y-3",
               "transition-all",
               "duration-700",
-              "ease-out"
+              "ease-out",
             );
           });
 
@@ -1685,7 +1700,7 @@
                 }
               });
             },
-            { threshold: 0.12 }
+            { threshold: 0.12 },
           );
 
           reveals.forEach((el) => io.observe(el));
