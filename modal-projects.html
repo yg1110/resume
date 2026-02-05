@@ -1,0 +1,61 @@
+<!-- Project Modal (회사별 프로젝트 열람) - index.html에서 fetch로 로드, 패널은 JS 상수에서 렌더 -->
+<div
+  id="project-modal"
+  class="fixed inset-0 z-[100] hidden items-center justify-center p-4"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="project-modal-title"
+>
+  <div
+    id="project-modal-backdrop"
+    class="fixed inset-0 bg-black/50 transition-opacity"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="relative z-10 w-full max-w-4xl max-h-[90vh] flex flex-col bg-white rounded-xl shadow-2xl overflow-hidden"
+  >
+    <!-- Modal Header + Close -->
+    <div
+      class="flex justify-between items-start gap-4 p-4 sm:p-6 border-b border-gray-200 shrink-0"
+    >
+      <div>
+        <h2 id="project-modal-title" class="text-xl font-bold text-gray-900">
+          회사명
+        </h2>
+        <p id="project-modal-period" class="text-sm text-gray-500 mt-0.5">
+          기간
+        </p>
+        <p id="project-modal-desc" class="text-gray-600 text-sm mt-2">
+          회사에서 수행한 프로젝트
+        </p>
+        <p class="text-xs text-gray-400 mt-2">
+          ※ 이미지 클릭 시 원본을 새 탭에서 볼 수 있습니다
+        </p>
+      </div>
+      <button
+        type="button"
+        id="project-modal-close"
+        class="modal-close-btn shrink-0 w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
+        aria-label="닫기"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- Modal Body: JS에서 PROJECT_MODAL_DATA 기반으로 렌더 -->
+    <div class="flex-1 overflow-y-auto p-4 sm:p-6" id="modal-panels-container">
+      <!-- 패널은 renderModalPanels()로 주입 -->
+    </div>
+  </div>
+</div>
