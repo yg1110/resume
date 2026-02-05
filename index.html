@@ -472,13 +472,13 @@
                   <div
                     class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2"
                   >
-                    <div>
+                    <div class="min-w-0">
                       <div class="flex items-center gap-2 mb-1">
                         <h3 class="text-xl font-bold text-gray-900">
                           팀패스 (Team Pass)
                         </h3>
                         <span
-                          class="text-[10px] font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2 py-0.5 rounded border border-orange-200"
+                          class="text-[10px] whitespace-nowrap flex-shrink-0 font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2 py-0.5 rounded border border-orange-200"
                         >
                           사업 종료
                         </span>
@@ -499,6 +499,29 @@
                     브래닛 서비스의 프론트엔드 전 범위를 수행. 1~2주 단위
                     스프린트 배포 및 데이터 기반 문제 정의/개선.
                   </p>
+
+                  <button
+                    type="button"
+                    class="project-modal-trigger inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition-colors mb-4"
+                    data-modal-id="modal-team-pass"
+                    aria-haspopup="dialog"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
+                    </svg>
+                    프로젝트 보기
+                  </button>
 
                   <div class="flex flex-wrap gap-2 mb-4">
                     <span
@@ -734,7 +757,7 @@
                           케이브먼트 (Cavement)
                         </h3>
                         <span
-                          class="text-[10px] font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2 py-0.5 rounded border border-orange-200"
+                          class="text-[10px] whitespace-nowrap font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2 py-0.5 rounded border border-orange-200"
                         >
                           사업 종료
                         </span>
@@ -1229,7 +1252,7 @@
                         RMancer
                       </h3>
                       <span
-                        class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-100"
+                        class="text-[10px] font-bold flex-shrink-0 uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-100"
                       >
                         MVP 완료
                       </span>
@@ -1459,7 +1482,7 @@
                         Wardrobe
                       </h3>
                       <span
-                        class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-100"
+                        class="text-[10px] font-bold flex-shrink-0 uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded border border-emerald-100"
                       >
                         MVP 완료
                       </span>

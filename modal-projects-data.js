@@ -7,22 +7,157 @@ const PROJECT_MODAL_DATA = [
     modalId: "modal-team-pass",
     panelId: "panel-team-pass",
     title: "팀패스 (Team Pass)",
-    period: "2025.04 - 2025.12 (9개월)",
+    period: "2025.04 - 2025.12 (8개월)",
     desc: "브래닛 서비스의 프론트엔드 전 범위를 수행한 프로젝트입니다.",
+    hideImagesOnMobile: true,
+    pcScreenshotLayout: true,
     projects: [
       {
-        title: "브래닛 웹 플랫폼",
+        title: "로켓요청",
         summary:
-          "화장품 제조 뷰티 플랫폼의 프론트엔드 전 범위 개발. UI 표준화·Storybook 컴포넌트 정비, 구독 결제(토스페이먼츠) 연동, React Query/Zustand 기반 상태 관리로 1~2주 스프린트 배포를 수행했습니다.",
-        images: ["", "", "", "", "", ""],
-        techStack: ["React", "TypeScript", "React Query", "Tailwind"],
+          "브랜드사가 화장품 제작을 위해 원하는 제조사·용기사·패키지사를 찾고 요청을 발송할 수 있는 기능을 구현했습니다. 브랜드사는 조건을 입력해 요청을 보내고, 각 업체는 조건이 맞는 경우 응답하는 구조로 설계했습니다. 특히 용기사는 사진 입력 시 DB에서 유사 항목을 탐색해 후보를 제시하고 선택하도록 구성했으며, 제조사/패키지사는 폼 기반 옵션 입력으로 요청을 발송합니다. 이를 통해 매칭 과정의 탐색 비용을 줄이고 요청-응답 흐름을 표준화했습니다.",
+        images: [
+          "img/팀패스/로켓요청/1.png",
+          "img/팀패스/로켓요청/2.png",
+          "img/팀패스/로켓요청/3.png",
+          "img/팀패스/로켓요청/4.png",
+          "img/팀패스/로켓요청/5.png",
+          "img/팀패스/로켓요청/6.png",
+          "img/팀패스/로켓요청/7.png",
+          "img/팀패스/로켓요청/8.png",
+          "img/팀패스/로켓요청/9.png",
+          "img/팀패스/로켓요청/10.png",
+          "img/팀패스/로켓요청/11.png",
+          "img/팀패스/로켓요청/12.png",
+          "img/팀패스/로켓요청/13.png",
+        ],
+        techStack: [
+          "React",
+          "TypeScript",
+          "React Query",
+          "Zustand",
+          "Tailwind",
+        ],
+        features: [
+          {
+            title: "요청 생성 및 대상 유형 분기(제조/용기/패키지)",
+            description:
+              "브랜드사가 요청 대상(제조사/용기사/패키지사)을 선택하고, 유형에 맞는 입력 플로우로 분기되는 기능입니다. 이를 통해 대상별로 다른 입력 요구사항을 일관된 UX로 제공했습니다.",
+          },
+          {
+            title: "용기사: 사진 기반 유사 용기 탐색",
+            description:
+              "브랜드사가 용기 사진을 업로드하면 DB에서 유사한 항목을 탐색해 후보를 화면에 제공하는 기능입니다. 이를 통해 사용자는 텍스트 검색 없이도 가까운 후보를 빠르게 찾고 선택할 수 있습니다.",
+          },
+          {
+            title: "용기사: 용기 직접 선택 후 요청 발송",
+            description:
+              "유사 후보 중 용기를 직접 선택한 뒤 요청을 발송하는 기능입니다. 이를 통해 요청 정확도를 높이고 업체 측의 추가 확인 비용을 줄였습니다.",
+          },
+          {
+            title: "제조사/패키지사: 옵션 폼 기반 요청 발송",
+            description:
+              "제조사/패키지사 요청에 필요한 옵션을 폼 형태로 입력해 각 업체에 전달하는 기능입니다. 이를 통해 요청 조건을 표준화하고 응답 가능 여부 판단을 빠르게 만들었습니다.",
+          },
+          {
+            title: "업체 응답 기반 매칭 흐름",
+            description:
+              "업체가 조건에 부합할 때 응답을 보내고, 브랜드사가 이를 확인하는 요청-응답 구조를 구성한 기능입니다. 이를 통해 단순 문의를 줄이고 실질적으로 가능한 후보와 빠르게 연결됩니다.",
+          },
+        ],
+      },
+      {
+        title: "파트너찾기",
+        summary:
+          "브랜드사가 제조사·패키지사·용기사를 목록에서 탐색하고, 상세 페이지에서 공장 정보를 확인할 수 있는 검색 기능을 구현했습니다. 또한 업체(공장) 측에는 대시보드를 제공해 회사 상세 정보를 수정하고, 조회수/찜/로켓요청/샘플 현황 등 핵심 지표를 확인할 수 있도록 구성했습니다. 이를 통해 브랜드사는 후보 탐색을 효율화하고, 파트너사는 성과 지표 기반으로 운영을 개선할 수 있습니다.",
+        images: [
+          "img/팀패스/파트너찾기/1.png",
+          "img/팀패스/파트너찾기/2.png",
+          "img/팀패스/파트너찾기/3.png",
+        ],
+        techStack: [
+          "React",
+          "TypeScript",
+          "React Query",
+          "Zustand",
+          "Tailwind",
+        ],
+        features: [
+          {
+            title: "파트너 목록 탐색(제조/패키지/용기)",
+            description:
+              "제조사·패키지사·용기사를 목록에서 확인하며 탐색할 수 있는 기능입니다. 이를 통해 브랜드사는 후보군을 빠르게 확보하고 비교할 수 있습니다.",
+          },
+          {
+            title: "파트너 상세 페이지",
+            description:
+              "목록에서 파트너 선택 시 상세 페이지로 이동해 회사의 세부 정보를 확인할 수 있는 기능입니다. 이를 통해 브랜드사는 협업 적합도를 빠르게 판단할 수 있습니다.",
+          },
+          {
+            title: "공장 대시보드: 회사 정보 수정",
+            description:
+              "공장(파트너) 측에서 회사 상세 정보를 직접 수정·관리할 수 있는 대시보드 기능입니다. 이를 통해 정보 최신성을 유지하고 운영 효율을 높였습니다.",
+          },
+          {
+            title: "공장 대시보드: 핵심 지표 조회",
+            description:
+              "조회수, 찜한 횟수, 로켓요청 현황, 샘플 현황 등 핵심 지표를 확인할 수 있는 기능입니다. 이를 통해 파트너사는 성과를 모니터링하고 운영 개선 포인트를 파악할 수 있습니다.",
+          },
+          {
+            title: "탐색/상세 데이터 패칭 및 캐싱",
+            description:
+              "목록/상세/대시보드 데이터를 React Query 기반으로 구성해 화면 전환 시 흐름을 안정화한 기능입니다. 이를 통해 탐색 경험의 대기 시간을 줄이고 체감 성능을 개선했습니다.",
+          },
+        ],
+      },
+      {
+        title: "구독 결제/플랜 관리 (실험실 포함)",
+        summary:
+          "서비스 구독 플랜 선택부터 결제, 구독 상태 조회/변경까지의 구독 전 과정을 프론트엔드에서 설계·구현했습니다. 토스페이먼츠 기반 결제 연동과 함께, 실험실(베타) 기능의 접근 제어 및 노출 전략을 적용해 플랜별 권한을 일관되게 관리했습니다. 이를 통해 유료 전환 흐름을 단순화하고 구독 경험의 안정성을 확보했습니다.",
+        images: ["img/팀패스/구독관련/1.png", "img/팀패스/구독관련/2.png"],
+        techStack: [
+          "React",
+          "TypeScript",
+          "React Query",
+          "Zustand",
+          "Tailwind",
+        ],
+        features: [
+          {
+            title: "플랜 선택 및 구독 온보딩",
+            description:
+              "사용자가 플랜을 비교·선택한 뒤 결제로 이어지도록 구독 온보딩 흐름을 구성한 기능입니다. 이를 통해 전환 과정의 이탈을 줄이고 구매 경험을 단순화했습니다.",
+          },
+          {
+            title: "토스페이먼츠 결제 연동",
+            description:
+              "결제 요청부터 승인/실패 처리, 결과 동기화까지 결제 플로우를 화면 단에서 안정적으로 연결한 기능입니다. 이를 통해 결제 상태에 따른 UX(성공/실패/재시도)를 일관되게 제공했습니다.",
+          },
+          {
+            title: "구독 상태 기반 기능 접근 제어",
+            description:
+              "구독 상태(활성/만료/해지 등)에 따라 접근 가능한 기능을 제어하는 기능입니다. 이를 통해 플랜에 맞는 기능 노출을 보장하고 사용자 혼란을 줄였습니다.",
+          },
+          {
+            title: "실험실: 설문 기반 기능 검증",
+            description:
+              "사용자에게 필요한 기능을 설문으로 수집하고, 피드백 결과를 기반으로 선(先)개발 대상을 선정하는 기능입니다. 이를 통해 개발 우선순위를 사용자 수요에 맞춰 조정할 수 있습니다.",
+          },
+          {
+            title: "실험실: 피드백 수집 및 추적",
+            description:
+              "기능별 의견을 수집하고, 이후 개발/반영 대상으로 관리할 수 있도록 구성한 기능입니다. 이를 통해 사용자 요구사항을 누락 없이 축적하고 검증 사이클을 운영할 수 있습니다.",
+          },
+        ],
       },
     ],
   },
+
   {
     modalId: "modal-cavement",
     panelId: "panel-cavement",
     title: "케이브먼트 (Cavement)",
+    hideImagesOnMobile: true,
     period: "2023.11 - 2025.04 (1년 6개월)",
     desc: "미남이오·제모데이 서비스의 앱/웹 개발 프로젝트입니다.",
     projects: [
@@ -148,6 +283,7 @@ const PROJECT_MODAL_DATA = [
     modalId: "modal-pet-people",
     panelId: "panel-pet-people",
     title: "펫피플 (Pet People)",
+    hideImagesOnMobile: true,
     period: "2022.04 - 2023.03 (1년)",
     desc: "와요/펫플래닛 앱 프로젝트입니다.",
     projects: [
@@ -302,21 +438,42 @@ function renderProjectFeatures(features) {
               </div>`;
 }
 
-function renderProjectCard(project, IMG_LINK_CLASS) {
+function renderProjectCard(project, IMG_LINK_CLASS, opts = {}) {
   const featuresHtml = renderProjectFeatures(project.features);
-  return `
-          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-            <div class="grid grid-cols-3 sm:grid-cols-4 gap-1.5 p-3 bg-slate-50">
-              ${(project.images || [])
+  const images = project.images || [];
+  const usePcLayout = opts.pcScreenshotLayout;
+  const imgGridClass = usePcLayout
+    ? "grid grid-cols-2 gap-2 p-3 bg-slate-50"
+    : "grid grid-cols-3 sm:grid-cols-4 gap-1.5 p-3 bg-slate-50";
+  const imgCellClass = usePcLayout
+    ? "project-img-link block aspect-video rounded-lg overflow-hidden project-img-placeholder cursor-pointer hover:opacity-90 transition-opacity border border-slate-200"
+    : IMG_LINK_CLASS;
+  const imgOuterClass = opts.hideImagesOnMobile ? "hidden md:block" : "";
+  const imgSection =
+    images.length > 0
+      ? `
+            <div class="${imgOuterClass}">
+              <div class="${imgGridClass}">
+              ${images
                 .map(
                   (src, i) => `
-              <a href="#" class="${IMG_LINK_CLASS}" aria-label="새 탭에서 이미지 보기">
+              <a href="#" class="${imgCellClass}" aria-label="새 탭에서 이미지 보기">
                 <img src="${escapeHtml(src || "")}" alt="${escapeHtml(project.title)} 스크린샷 ${i + 1}" class="w-full h-full object-cover" />
               </a>`,
                 )
                 .join("")}
-            </div>
+              </div>
+            </div>`
+      : "";
+  const mobileHint =
+    opts.hideImagesOnMobile && (project.images || []).length > 0
+      ? '<p class="md:hidden text-xs text-gray-400 mb-2 px-1">※ 스크린샷은 PC 화면에서 확인할 수 있습니다</p>'
+      : "";
+  return `
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            ${imgSection}
             <div class="p-4">
+              ${mobileHint}
               <h3 class="font-bold text-gray-900 mb-1">${escapeHtml(project.title)}</h3>
               <p class="text-sm text-gray-700 leading-relaxed mb-3">${escapeHtml(project.summary)}</p>
               <div class="flex flex-wrap gap-2">
@@ -334,14 +491,19 @@ function renderProjectCard(project, IMG_LINK_CLASS) {
 
 function renderModalPanels(data) {
   const IMG_LINK_CLASS =
-    "project-img-link block aspect-square rounded-lg overflow-hidden project-img-placeholder cursor-pointer hover:opacity-90 transition-opacity";
+    "project-img-link block aspect-square rounded-lg overflow-hidden project-img-placeholder cursor-pointer hover:opacity-90 transition-opacity border border-slate-200";
 
   return data
     .map(
       (company) => `
       <div id="${company.panelId}" class="modal-panel hidden space-y-8">
         ${(company.projects || [])
-          .map((p) => renderProjectCard(p, IMG_LINK_CLASS))
+          .map((p) =>
+            renderProjectCard(p, IMG_LINK_CLASS, {
+              hideImagesOnMobile: company.hideImagesOnMobile,
+              pcScreenshotLayout: company.pcScreenshotLayout,
+            }),
+          )
           .join("")}
       </div>`,
     )
