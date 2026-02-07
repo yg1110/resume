@@ -1861,6 +1861,10 @@
               modal.classList.remove("hidden");
               modal.classList.add("flex");
               document.body.classList.add("modal-open");
+              const panelsContainer = document.getElementById(
+                "modal-panels-container",
+              );
+              if (panelsContainer) panelsContainer.scrollTop = 0;
               document.addEventListener("keydown", handleEscape);
               modal.addEventListener("keydown", trapFocus);
               closeBtn.focus();
