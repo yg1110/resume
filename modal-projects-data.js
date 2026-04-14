@@ -8,7 +8,7 @@ const PROJECT_MODAL_DATA = [
     panelId: "panel-team-pass",
     title: "팀패스 (Team Pass)",
     period: "2025.04 - 2025.12 (8개월)",
-    desc: "브래닛 서비스의 프론트엔드 전 범위를 수행한 프로젝트입니다.",
+    desc: "브래닛 서비스의 프론트엔드(React) 전 범위 및 백엔드 API(NestJS/Prisma) 설계·구현을 수행한 풀스택 프로젝트입니다.",
     hideImagesOnMobile: true,
     pcScreenshotLayout: true,
     projects: [
