@@ -152,11 +152,9 @@
             </p>
 
             <p class="text-base text-slate-400 font-light mb-6 leading-relaxed">
-              프론트엔드 3년 후 공장에서 제품을 검사하는 장비의 웹 서비스로
-              옮겨, 웹 개발자가 없던<br class="hidden sm:block" />
-              초기에는 신규 제품을 풀스택으로 단독 개발했고, 디스크가 차 멈추던
-              700GB<br class="hidden sm:block" />
-              테이블과 부팅·실시간 연결 장애를 직접 해결했습니다.
+              프론트엔드 3년을 거쳐, 공장에 설치되는 검사 장비의 운영 대시보드를 맡았습니다.<br class="hidden sm:block" />
+              웹 개발자가 없던 초기에는 신규 제품을 풀스택으로 단독 개발했고,<br class="hidden sm:block" /> 디스크가 차서
+              멈추던 700GB 테이블과 현장 장애를 직접 해결했습니다.
             </p>
 
             <div
@@ -244,9 +242,9 @@
               <div class="prose prose-slate text-gray-700 leading-relaxed">
                 <p>
                   프론트엔드 개발자로 3년을 일했고, 현재는 Aivex에서 공장에
-                  설치되는 검사 장비의 웹 서비스를 개발하고 있습니다. 카메라로
-                  제품을 찍어 불량을 판정하고, 그 결과를 저장·조회하는
-                  시스템입니다. 합류 당시 웹 개발자가 없어 React 화면,
+                  설치되는 검사 장비의 <strong>운영 대시보드</strong>를 개발하고 있습니다. 카메라로 제품을 찍어 불량을 판정하고, 그 결과와
+                  장비 상태를 실시간으로 보여주고 조회하는 화면입니다. 클라우드가 아니라 <strong>고객사 공장 안(온프레미스)에
+                  설치돼</strong> 돌아갑니다. 합류 당시 웹 개발자가 없어 React 화면,
                   NestJS/Prisma API, PostgreSQL, Helm/ArgoCD 배포까지 전 구간을
                   맡아 왔습니다.
                 </p>
@@ -261,7 +259,8 @@
                   1/14로 줄였고, 테스트용 서버를 배포 환경에 직접 올렸습니다.
                 </p>
                 <p class="mt-3">
-                  해결한 문제는 배경과 시도한 방법, 기각한 이유까지 정리해
+                  해결한 문제는 배경과 검토한 선택지, 그중 무엇을 왜 택했는지까지
+                  정리해
                   <a
                     href="https://velog.io/@yg1110/posts"
                     target="_blank"
@@ -373,8 +372,8 @@
                     >
                   </div>
                   <p class="text-xs text-gray-500 mt-3 leading-relaxed">
-                    Helm 차트 작성, ArgoCD 등록, 서버 리소스 조정, 빌드·배포
-                    파이프라인 구성을 직접 했습니다.
+                    제품이 고객사 현장의 Kubernetes 환경에 설치되는 구조라, Helm 차트가 곧 각 사이트의 구성입니다. 차트 작성, ArgoCD
+                    등록, 서버 리소스 조정, 빌드·배포 파이프라인 구성을 직접 했습니다.
                   </p>
                 </div>
                 <!-- Frontend -->
@@ -457,7 +456,7 @@
                     >
                   </div>
                   <p class="text-xs text-gray-500 mt-3 leading-relaxed">
-                    데스크톱 셸을 Go(Wails)로 재작성했고, Claude Code 커맨드로
+                    현장 PC용 데스크톱 앱을 Go(Wails)로 재작성했고, Claude Code 커맨드로
                     리뷰·PR 작업을 자동화했습니다.
                   </p>
                 </div>
@@ -474,8 +473,8 @@
               대표 성과
             </h2>
             <p class="text-sm text-gray-500 mb-5 leading-relaxed">
-              Aivex에서 맡았던 작업 네 가지입니다. 각 항목의 배경과 시도한 방법,
-              기각한 이유는 기술 블로그에 정리해 두었습니다.
+              Aivex에서 맡았던 작업 네 가지입니다. 각 항목의 배경과 검토한 선택지,
+              무엇을 왜 택했는지는 기술 블로그에 정리해 두었습니다.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
               <div
@@ -667,8 +666,7 @@
                   </div>
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                    공장에서 제품 불량을 검사하는 장비의 웹 서비스 개발 (기존
-                    제품 + 신규 제품)<br />
+                    공장에 설치되는 검사 장비의 운영 대시보드 개발 (기존 제품 + 신규 제품). 고객사 현장에 직접 설치되는 온프레미스 환경<br />
                     프론트엔드(React), 백엔드(NestJS/Prisma/PostgreSQL), 현장
                     PC용 데스크톱 앱(Go), 배포(Helm/ArgoCD)를 담당. 웹 개발자가
                     없는 상태에서 합류해 기능 개발과 현장 장애 대응을 수행.
@@ -743,8 +741,7 @@
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
                           주문 관리, 작업 계획, 측정 데이터 수집, 장비 설정,
-                          이력 관리 등 <strong>백엔드 도메인 10종</strong>을
-                          신규 작성
+                          이력 관리 등 <strong>백엔드 10개 영역</strong>을 신규 작성
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
@@ -753,6 +750,13 @@
                           처리하고, 최신 상태는 메모리 캐시로 조회하도록 구성.
                           장비마다 다른 통신 규격을 하나의 인터페이스로 감싸는
                           추상화 계층 작성
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          이벤트가 동시에 들어올 때
+                          <strong>같은 데이터가 두 번 저장되고 주문 상태가 어긋나던 문제</strong>를,
+                          DB 락으로 처리 순서를 강제해 해소
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
@@ -1114,37 +1118,33 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        배포 환경 구성 및 서버 운영 (Kubernetes / Helm / ArgoCD)
+                        고객사 현장에 나가는 배포 구성 및 서버 운영 (Kubernetes / Helm / ArgoCD)
                       </h4>
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          테스트에 필요하지만 어디에도 올라가 있지 않던
-                          <strong>장비 동작 흉내용 목 서버</strong>를, 배포
-                          설정(Helm 차트)을 새로 작성하고 자동 배포
-                          도구(ArgoCD)에 등록해 개발·운영 환경에 올림
+                          제품이 <strong>고객사 공장의 Kubernetes 환경에 설치되어 나가는</strong> 구조라, Helm 차트가 각 사이트의 실제
+                          구성이 됨. 차트 수정과 배포 도구(ArgoCD) 등록을 직접 담당
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          메모리 부족으로 반복해서 죽던 백엔드 서버에
-                          <strong>메모리 상한과 할당량을 조정</strong>해 안정화
+                          테스트에 필요하지만 어디에도 올라가 있지 않던 <strong>장비 동작 흉내용 목 서버</strong>를, 배포 설정을 새로 작성하고
+                          ArgoCD 앱으로 등록해 개발·운영 환경에 올림
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          자동 배포가 실패하던 오류 수정, 환경별로 다른 실행
-                          명령을 설정값으로 분리, 개발 서버 사양에 맞춘 이미지
-                          빌드
+                          메모리 부족으로 반복해서 죽던 백엔드 서버에 <strong>메모리 상한과 할당량을 조정</strong>해 안정화. 자동 배포가 실패하던
+                          오류 수정, 환경별로 다른 실행 명령을 설정값으로 분리, 서버 사양에 맞춘 이미지 빌드
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >테스트에 필요한 서버를 자동 배포 대상에 편입하고,
-                            반복되던 백엔드 서버 다운을 해소</span
+                            >고객사로 나가는 배포 구성을 직접 다루게 되고, 테스트에 필요한 서버를 자동 배포 대상에 편입. 반복되던 백엔드 서버 다운을 해소</span
                           >
                         </p>
                       </div>
@@ -1533,16 +1533,12 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          자주 이동하는 페이지는 Next Link prefetch로 선로딩,
-                          이미지가 많은 화면은 레이지 로딩으로 초기 로딩 부담을
-                          분산
+                          자주 이동하는 페이지는 미리 불러두고, 이미지가 많은 화면은 화면에 들어올 때 불러오도록 해 초기 로딩 부담을 분산
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          React Query 캐싱으로 동일 데이터의 중복 호출을
-                          억제하고 리페치 시점·규칙을 정리해 핵심 전환 구간의
-                          불필요한 네트워크/리렌더를 최소화
+                          같은 데이터를 여러 번 요청하지 않도록 캐싱하고, 다시 불러오는 시점의 규칙을 정리해 화면 전환 구간의 불필요한 요청과 렌더링을 최소화
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
@@ -1578,16 +1574,13 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          dragend/zoom_changed 이후 디바운스 처리 및 “검색”
-                          트리거 기반으로 요청 타이밍을 통제해 불필요한 재요청을
-                          감소
+                          지도 이동·줌이 끝난 뒤에만 요청하도록 지연 처리하고, “검색” 버튼을 눌렀을 때만 조회하도록 바꿔 불필요한 재요청을 감소
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          마커는 diff 기반으로 업데이트(기존 마커 재사용, 필요한
-                          마커만 추가·제거)하고 지도 렌더링 로직을 모듈화해 화면
-                          튐 현상을 제거
+                          마커를 매번 다시 그리지 않고 <strong>바뀐 것만 추가·제거</strong>하도록 바꾸고, 지도 렌더링 로직을 분리해 화면이 튀는
+                          현상을 제거
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
@@ -1631,8 +1624,7 @@
                   </div>
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                    반려동물 플랫폼 '와요/펫플래닛'의 앱 및 내부 어드민 서비스를
-                    개발.
+                    반려동물 플랫폼 '와요/펫플래닛'의 앱 및 내부 어드민 서비스 개발
                   </p>
 
                   <button
@@ -1731,12 +1723,12 @@
                     </div>
                     <span
                       class="text-sm text-gray-500 font-mono mt-1 sm:mt-0 bg-gray-100 px-2 py-1 rounded"
-                      >2020.11 - 2022.04 (1년 5개월)</span
+                      >2020.11 - 2022.04 (1년 6개월)</span
                     >
                   </div>
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                    전파 탐지 프로그램(EdgeRF) 프로그램 개발
+                    전파 탐지 장비의 모니터링 프로그램 개발
                   </p>
 
                   <div class="flex flex-wrap gap-2 mb-4">
@@ -1755,30 +1747,29 @@
                       <span
                         class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                       ></span>
-                      전파 탐지 프로그램(EdgeRF) 프로그램 개발(WPF)
+                      전파 탐지 장비 모니터링 화면 개발 (WPF/C#)
                     </h4>
                     <ul class="list-none space-y-1.5 ml-1 mb-2">
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        FPGA장비로부터 전달되는 전파 데이터를 애플리케이션에서
-                        수신하여 화면에 표시하는 모니터링 UI 구현(WPF/C#).
+                        장비에서 계속 전달되는 전파 데이터를 프로그램에서 받아
+                        화면에 실시간으로 표시하는 모니터링 UI를 구현
                       </li>
                       <li
                         class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                       >
-                        운영자가 데이터를 빠르게 해석할 수 있도록 시각화 중심의
-                        화면 구성(대시보드/그래프/상태 표시 등) 및 사용자 흐름
-                        정리.
+                        운영자가 값을 빠르게 읽을 수 있도록 대시보드·그래프·상태
+                        표시 중심으로 화면을 구성하고 사용자 흐름을 정리
                       </li>
                     </ul>
                     <div class="mt-2 pt-2 border-t border-slate-200">
                       <p class="text-sm font-semibold text-blue-700">
                         🚀 Impact:
                         <span class="font-medium text-gray-800"
-                          >실시간/준실시간 모니터링 환경에서 운영 관점의
-                          가시성과 데이터 해석 속도 향상
-                        </span>
+                          >실시간 모니터링 환경에서 운영자가 상태를 파악하는
+                          속도를 개선</span
+                        >
                       </p>
                     </div>
                   </div>
@@ -1799,7 +1790,7 @@
             <p class="text-sm text-gray-500 mb-5 leading-relaxed">
               업무에서 실제로 겪은 문제를
               <strong class="text-gray-700"
-                >배경 · 시도한 방법 · 기각한 이유 · 결과</strong
+                >배경 · 검토한 선택지 · 결정 근거 · 결과</strong
               >
               순으로 정리해 공개하고 있습니다. ·
               <a
@@ -1839,8 +1830,8 @@
                         >
                       </div>
                       <p class="text-xs text-gray-500 mt-1 leading-relaxed">
-                        데이터를 지우는 방식을 기각하고 테이블을 쪼개는 구조로
-                        간 이유, 장비를 세우지 않고 바꾼 절차
+                        지우는 방식 대신 테이블을 쪼개는 구조를 택한 이유와,
+                        장비를 세우지 않고 바꾼 절차
                       </p>
                     </a>
                   </li>
