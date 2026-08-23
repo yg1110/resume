@@ -139,16 +139,37 @@
             <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
               정영길
             </h1>
-            <p class="text-xl text-slate-300 font-light mb-8 leading-relaxed">
-              프론트엔드부터 백엔드까지,
-              <span class="text-blue-400 font-semibold">서비스 전 구간</span>을
-              설계하고<br />
-              <span class="text-blue-400 font-semibold">직관적인 UX</span>와
-              <span class="text-blue-400 font-semibold">안정적인 API</span>로
-              제품 완성도를 높여 온<br />
+            <p class="text-xl text-slate-300 font-light mb-5 leading-relaxed">
+              <span class="text-blue-400 font-semibold"
+                >제품 하나를 끝까지 만들고</span
+              >,<br />
+              현장에서 터진 문제를
+              <span class="text-blue-400 font-semibold"
+                >원인까지 찾아 고치는</span
+              ><br />
               <span class="text-blue-400 font-semibold">풀스택</span>
-              개발자 입니다.
+              개발자입니다.
             </p>
+
+            <p class="text-base text-slate-400 font-light mb-6 leading-relaxed">
+              프론트엔드 3년 후 공장에서 제품을 검사하는 장비의 웹 서비스로
+              옮겨, 웹 개발자가 없던<br class="hidden sm:block" />
+              초기에는 신규 제품을 풀스택으로 단독 개발했고, 디스크가 차 멈추던
+              700GB<br class="hidden sm:block" />
+              테이블과 부팅·실시간 연결 장애를 직접 해결했습니다.
+            </p>
+
+            <div
+              class="flex flex-wrap gap-x-3 gap-y-2 text-sm text-slate-400 mb-8"
+            >
+              <span class="text-slate-300">신규 제품 풀스택 단독 개발</span>
+              <span aria-hidden="true">·</span>
+              <span class="text-slate-300">700GB 테이블 구조 개선</span>
+              <span aria-hidden="true">·</span>
+              <span class="text-slate-300"
+                >부팅·실시간 연결 장애 원인 규명</span
+              >
+            </div>
 
             <div
               class="flex flex-wrap gap-4 sm:gap-8 text-sm sm:text-base text-slate-300"
@@ -187,6 +208,25 @@
                 </svg>
                 GitHub
               </a>
+              <a
+                href="https://velog.io/@yg1110/posts"
+                class="flex items-center hover:text-white transition-colors group"
+              >
+                <svg
+                  class="w-5 h-5 mr-2 group-hover:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  ></path>
+                </svg>
+                기술 블로그
+              </a>
             </div>
           </div>
         </header>
@@ -203,45 +243,33 @@
             <div class="space-y-6">
               <div class="prose prose-slate text-gray-700 leading-relaxed">
                 <p>
-                  컴퓨터공학 전공 후 삼성 청년 소프트웨어 아카데미(SSAFY)에서
-                  <strong>애자일 협업과 실무 개발 기본기</strong>를 다졌고, WPF
-                  개발을 시작으로 웹(React/Next)·앱(React
-                  Native)·백엔드(NestJS)까지 확장하며 프론트엔드부터
-                  서버·API까지 아우르는 <strong>풀스택 개발</strong>로 프로덕션
-                  서비스를 만들어 왔습니다.<br />
+                  프론트엔드 개발자로 3년을 일했고, 현재는 Aivex에서 공장에
+                  설치되는 검사 장비의 웹 서비스를 개발하고 있습니다. 카메라로
+                  제품을 찍어 불량을 판정하고, 그 결과를 저장·조회하는
+                  시스템입니다. 합류 당시 웹 개발자가 없어 React 화면,
+                  NestJS/Prisma API, PostgreSQL, Helm/ArgoCD 배포까지 전 구간을
+                  맡아 왔습니다.
                 </p>
                 <p class="mt-3">
-                  WPF 환경에서는
-                  <strong>실시간 데이터 수신 기반 모니터링·시각화</strong> UI를,
-                  웹/앱에서는
-                  <strong>사용자 흐름·상태(로딩/성공/실패)·전환 품질</strong>을
-                  기준으로 직관적이고 일관된 경험을 구현했습니다. 백엔드에서는
-                  <strong>RESTful API 설계·구현·배포</strong>까지 단독으로
-                  수행했습니다.
+                  재직 중 한 일은 크게 세 가지입니다. 신규 제품을
+                  <strong>풀스택으로 단독 개발</strong>했고, 디스크가 차서
+                  검사가 멈추던 대용량 테이블 12개를
+                  <strong>기간 단위로 쪼개 자동 정리되는 구조로 전환</strong
+                  >했으며, 장비가 켜지지 않거나 실시간 연결이 끊기는
+                  <strong>현장 장애의 원인을 찾아 수정</strong>했습니다. 그 밖에
+                  현장 PC에 설치되는 데스크톱 앱을 Go로 다시 만들어 용량을
+                  1/14로 줄였고, 테스트용 서버를 배포 환경에 직접 올렸습니다.
                 </p>
                 <p class="mt-3">
-                  <strong class="text-gray-900"
-                    >문제 해결과 근본 원인 분석</strong
-                  >에 집중합니다. 사용자 입력 유실 문제를 "상태 관리 전략"
-                  관점에서 접근해 화면 상태와 서버 상태를 분리하고, 요청 작성
-                  완료율을 안정화했습니다. 렌더링 성능 이슈는 페이지 목적과
-                  데이터 변경 주기를 분석해 SSG/SSR/ISR/CSR을 전략적으로 선택
-                  적용했습니다.
-                </p>
-                <p class="mt-3">
-                  <strong class="text-gray-900">아키텍처와 설계 사고</strong>를
-                  중시합니다. 프론트엔드에서는 React Query로 서버 상태를
-                  관리하고 Zustand는 UI 핵심 상태만 최소화해 데이터 동기화
-                  이슈를 사전에 방지합니다. 백엔드에서는 NestJS 모듈 구조와
-                  Prisma ORM으로 책임 경계를 명확히 한 API를 설계합니다.
-                </p>
-                <p class="mt-3">
-                  <strong class="text-gray-900">협업과 문서화</strong>를 통해 팀
-                  생산성을 높입니다. Swagger(OpenAPI)로 API 계약을 명확히 하고,
-                  Storybook으로 UI 컴포넌트를 문서화해
-                  디자이너·기획자·백엔드와의 커뮤니케이션 비용을 절감합니다.
-                  풀스택 관점에서 프론트엔드와 백엔드 양측의 요구사항을 균형
-                  있게 조율합니다.
+                  해결한 문제는 배경과 시도한 방법, 기각한 이유까지 정리해
+                  <a
+                    href="https://velog.io/@yg1110/posts"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-blue-600 font-semibold hover:underline"
+                    >기술 블로그에 10편</a
+                  >
+                  공개했습니다.
                 </p>
               </div>
             </div>
@@ -257,24 +285,108 @@
             </h2>
             <div class="space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Core: Language & Framework -->
+                <!-- Backend & Data -->
                 <div
                   class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
                 >
                   <h3
                     class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
                   >
-                    Core: Language & Framework
+                    Backend &amp; Data
                   </h3>
                   <div class="flex flex-wrap gap-2">
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >NestJS</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Node.js</span
+                    >
                     <span
                       class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >TypeScript</span
                     >
                     <span
                       class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >JavaScript (ES6+)</span
+                      >Prisma</span
                     >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Redis Stream</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >REST API</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >SSE</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Socket.IO</span
+                    >
+                  </div>
+                  <p class="text-xs text-gray-500 mt-3 leading-relaxed">
+                    운영 DB의 파티셔닝, 인덱스, 마이그레이션 이관 작업을 직접
+                    수행했습니다.
+                  </p>
+                </div>
+                <!-- Infra & DevOps -->
+                <div
+                  class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
+                >
+                  <h3
+                    class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
+                  >
+                    Infra &amp; DevOps
+                  </h3>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Docker</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Kubernetes</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Helm</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >ArgoCD</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Bitbucket Pipelines</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >GitOps</span
+                    >
+                  </div>
+                  <p class="text-xs text-gray-500 mt-3 leading-relaxed">
+                    Helm 차트 작성, ArgoCD 등록, 서버 리소스 조정, 빌드·배포
+                    파이프라인 구성을 직접 했습니다.
+                  </p>
+                </div>
+                <!-- Frontend -->
+                <div
+                  class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
+                >
+                  <h3
+                    class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
+                  >
+                    Frontend
+                  </h3>
+                  <div class="flex flex-wrap gap-2">
                     <span
                       class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >React</span
@@ -283,18 +395,10 @@
                       class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >Next.js</span
                     >
-                  </div>
-                </div>
-                <!-- Core: State & UI -->
-                <div
-                  class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
-                >
-                  <h3
-                    class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
-                  >
-                    Core: State & UI
-                  </h3>
-                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >TypeScript</span
+                    >
                     <span
                       class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >React Query</span
@@ -313,79 +417,38 @@
                     >
                     <span
                       class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >Styled-components</span
-                    >
-                  </div>
-                </div>
-                <!-- Backend -->
-                <div
-                  class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
-                >
-                  <h3
-                    class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
-                  >
-                    Backend
-                  </h3>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >NestJS</span
-                    >
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >Node.js</span
-                    >
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >Prisma</span
-                    >
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >PostgreSQL</span
-                    >
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >REST API</span
-                    >
-                  </div>
-                </div>
-                <!--Sub -->
-                <div
-                  class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
-                >
-                  <h3
-                    class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
-                  >
-                    Sub
-                  </h3>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >React Native</span
                     >
-                    <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
-                      >WPF</span
-                    >
                   </div>
+                  <p class="text-xs text-gray-500 mt-3 leading-relaxed">
+                    React 기반 화면을 3년간 담당했고, 공통 컴포넌트 표준화와
+                    대용량 목록 가상화, 권한 기반 화면 제어를 직접 구현했습니다.
+                  </p>
                 </div>
-                <!-- Sub: Others -->
+                <!-- Sub & Tools -->
                 <div
                   class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm"
                 >
                   <h3
                     class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3"
                   >
-                    Tools
+                    Sub &amp; Tools
                   </h3>
                   <div class="flex flex-wrap gap-2">
                     <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Go (Wails)</span
                     >
-                      Cursor AI
-                    </span>
                     <span
-                      class="inline-flex items-center px-3 py-1.5 rounded-md font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >WPF / C#</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
+                      >Claude Code</span
+                    >
+                    <span
+                      class="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium bg-white text-gray-800 shadow-sm border border-gray-200"
                       >Jira/Slack/Git</span
                     >
                     <span
@@ -393,84 +456,173 @@
                       >Figma</span
                     >
                   </div>
+                  <p class="text-xs text-gray-500 mt-3 leading-relaxed">
+                    데스크톱 셸을 Go(Wails)로 재작성했고, Claude Code 커맨드로
+                    리뷰·PR 작업을 자동화했습니다.
+                  </p>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- Philosophy Section -->
+          <!-- Key Achievements -->
           <section class="mb-10 reveal">
             <h2
               class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
             >
               <span class="w-8 h-1 bg-blue-600 rounded-full mr-3"></span>
-              코드 스타일 및 철학
+              대표 성과
             </h2>
+            <p class="text-sm text-gray-500 mb-5 leading-relaxed">
+              Aivex에서 맡았던 작업 네 가지입니다. 각 항목의 배경과 시도한 방법,
+              기각한 이유는 기술 블로그에 정리해 두었습니다.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+              <div
+                class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col"
+              >
+                <p class="text-3xl font-extrabold text-blue-600 leading-none">
+                  700<span class="text-base font-bold text-blue-500">GB</span>
+                </p>
+                <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                  기간 단위로 쪼개 자동 정리하도록 바꾼 테이블
+                </p>
+              </div>
+              <div
+                class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col"
+              >
+                <p class="text-3xl font-extrabold text-blue-600 leading-none">
+                  87<span class="text-base font-bold text-blue-500">초</span>
+                </p>
+                <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                  장비 기동을 막고 있던 조회 쿼리 소요 시간
+                </p>
+              </div>
+              <div
+                class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col"
+              >
+                <p class="text-3xl font-extrabold text-blue-600 leading-none">
+                  93<span class="text-base font-bold text-blue-500">%</span>
+                </p>
+                <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                  데스크톱 앱 설치 파일 크기 감소 (150MB → 10.9MB)
+                </p>
+              </div>
+              <div
+                class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col"
+              >
+                <p class="text-3xl font-extrabold text-blue-600 leading-none">
+                  10<span class="text-base font-bold text-blue-500">편</span>
+                </p>
+                <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                  재직 중 작성한 기술 블로그 글
+                </p>
+              </div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="bg-slate-50 border border-slate-100 p-5 rounded-xl">
-                <div class="flex flex-wrap gap-2 mb-3">
+              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                <div class="flex flex-wrap gap-2 mb-2">
                   <span
                     class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
-                    >Separation of Concerns</span
+                    >Database</span
                   >
                 </div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">
-                  관심사의 분리와 추상화 레벨
+                <h3 class="text-base font-bold text-gray-900 mb-2">
+                  디스크가 차서 멈추던 장비
                 </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  프론트엔드에서는 복잡한 비즈니스 로직을 Custom Hooks로
-                  추상화하여 컴포넌트에는 '무엇을 보여줄지'만 남깁니다.
-                  백엔드에서는 NestJS 모듈·서비스·컨트롤러 레이어로 책임을
-                  분리해 테스트·유지보수 비용을 낮춥니다.
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  하루 16만 건이 쌓여 디스크가 가득 차면 저장이 실패하고 장비가
+                  멈췄습니다. 오래된 데이터를 지우는 방식은 뒷정리 비용 때문에
+                  오히려 장비를 느리게 만들어, 테이블을 기간 단위로 쪼개 통째로
+                  버리는 구조로 바꿨습니다. 정리 작업이
+                  <strong>10~30분 수동 작업에서 자동 처리</strong>로
+                  바뀌었습니다.
                 </p>
+                <a
+                  href="https://velog.io/@yg1110/%EB%94%94%EC%8A%A4%ED%81%AC%EA%B0%80-%EA%BD%89-%EC%B0%A8%EC%84%9C-%EB%A9%88%EC%B6%98-%EA%B2%80%EC%82%AC-%EC%9E%A5%EB%B9%84-%EC%82%AD%EC%A0%9C%EB%A5%BC-%EC%97%86%EC%95%A0%EA%B8%B0%EA%B9%8C%EC%A7%80-%EB%8C%80%EC%9A%A9%EB%9F%89-%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EC%82%BD%EC%A7%88%EA%B8%B0"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >📝 디스크가 꽉 차서 멈춘 검사 장비 — 대용량 테이블 파티셔닝
+                  삽질기</a
+                >
               </div>
-              <div class="bg-slate-50 border border-slate-100 p-5 rounded-xl">
-                <div class="flex flex-wrap gap-2 mb-3">
+              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                <div class="flex flex-wrap gap-2 mb-2">
                   <span
                     class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
-                    >Server State Management</span
+                    >Incident</span
                   >
                 </div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">
-                  상태 관리의 전략적 선택
+                <h3 class="text-base font-bold text-gray-900 mb-2">
+                  연결이 끊긴 채 복구되지 않던 장애
                 </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  API 데이터는 React Query를 통해 서버 상태로 관리하고, UI의
-                  핵심 상태만 Zustand로 최소화하여 데이터 동기화 이슈를 사전에
-                  방지합니다.
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  장비를 재부팅해도 화면의 연결 끊김 표시가 사라지지 않고,
+                  브라우저 새로고침에만 복구됐습니다. 상태 조회의 영구 정지,
+                  서버 생존 신호 미도달, 재연결 취소 조건 —
+                  <strong>서로 무관한 원인 3건</strong>을 각각 확인해 수정하고,
+                  다음에 확인할 진단 로그 수집 기능도 함께 만들었습니다.
                 </p>
+                <a
+                  href="https://velog.io/@yg1110/%EC%97%B0%EA%B2%B0%EC%9D%80-%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94%EB%8D%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80-%EC%95%88-%EC%98%A8%EB%8B%A4-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8%ED%95%B4%EC%95%BC%EB%A7%8C-%EB%B3%B5%EA%B5%AC%EB%90%98%EB%8D%98-SSE-%EA%B3%A0%EC%B9%98%EA%B8%B0"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >📝 연결은 살아있는데 데이터가 안 온다 — 새로고침해야만
+                  복구되던 SSE 고치기</a
+                >
               </div>
-              <div class="bg-slate-50 border border-slate-100 p-5 rounded-xl">
-                <div class="flex flex-wrap gap-2 mb-3">
+              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                <div class="flex flex-wrap gap-2 mb-2">
                   <span
                     class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
-                    >Design System</span
+                    >Architecture</span
                   >
                 </div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">
-                  디자인 시스템과 생산성
+                <h3 class="text-base font-bold text-gray-900 mb-2">
+                  데스크톱 앱 150MB → 10.9MB
                 </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  반복되는 UI 패턴은 조기에 컴포넌트화하여 Storybook으로
-                  문서화합니다. 디자이너와의 커뮤니케이션 비용을 줄이고 개발
-                  리드타임을 단축합니다.
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  웹 화면 하나를 띄우기만 하는 앱인데 브라우저 엔진을 통째로
+                  동봉해 150MB였습니다. 그 엔진의 기능을 거의 쓰지 않아, PC에
+                  이미 있는 웹뷰를 빌려 쓰는 방식으로 다시 만들어
+                  <strong>10.9MB 파일 하나</strong>가 됐습니다. 빌드·배포
+                  자동화와 설치 파일 생성도 함께 작성했습니다.
                 </p>
+                <a
+                  href="https://velog.io/@yg1110/%EC%9B%B9-%ED%99%94%EB%A9%B4-%ED%95%98%EB%82%98-%EB%9D%84%EC%9A%B0%EC%9E%90%EA%B3%A0-150MB%EB%A5%BC-%EA%B9%94%EA%B3%A0-%EC%9E%88%EC%97%88%EB%8B%A4-Electron-%EB%9E%98%ED%8D%BC%EB%A5%BC-Go%EB%A1%9C-%EA%B0%88%EC%95%84%EC%97%8E%EA%B8%B0"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >📝 웹 화면 하나 띄우자고 150MB를 깔고 있었다 — Electron
+                  래퍼를 Go로 갈아엎기</a
+                >
               </div>
-              <div class="bg-slate-50 border border-slate-100 p-5 rounded-xl">
-                <div class="flex flex-wrap gap-2 mb-3">
+              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                <div class="flex flex-wrap gap-2 mb-2">
                   <span
                     class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
-                    >UI Responsiveness</span
+                    >Ownership</span
                   >
                 </div>
-                <h3 class="text-lg font-bold text-gray-800 mb-2">
-                  체감 속도 중심의 UI/UX 설계
+                <h3 class="text-base font-bold text-gray-900 mb-2">
+                  신규 제품 풀스택 단독 개발
                 </h3>
-                <p class="text-gray-600 text-sm leading-relaxed">
-                  로딩 단계에서 스켈레톤/고정 높이로 레이아웃 시프트를 차단하고,
-                  인터랙션으로 화면 전환과 애니메이션이 자연스럽게 이어지도록
-                  설계합니다.
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  실제 장비도 데이터도 확정 기획서도 없이 시작한 신규 제품에서
+                  <strong>백엔드 10개 영역과 화면 전체를 단독으로 개발</strong
+                  >했습니다. 장비 동작을 흉내 내는 목 서버를 만들어 다른 팀과
+                  인터페이스를 맞추고, 실장비 없이 전체 흐름을 검증했습니다.
                 </p>
+                <a
+                  href="https://velog.io/@yg1110/%EC%84%BC%EC%84%9C%EB%8F%84-%EA%B8%B0%ED%9A%8D%EC%84%9C%EB%8F%84-%EC%97%86%EC%9D%B4-%ED%82%A5%EC%98%A4%ED%94%84%ED%96%88%EB%8B%A4-%EB%B6%88%ED%99%95%EC%8B%A4%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EC%84%AF-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8%EB%A1%9C-%EA%B5%B4%EB%A6%B0-%EA%B8%B0%EB%A1%9D"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >📝 센서도 기획서도 없이 킥오프했다 — 불확실한 프로젝트를 다섯
+                  스프린트로 굴린 기록</a
+                >
               </div>
             </div>
           </section>
@@ -485,6 +637,624 @@
             </h2>
             <div class="space-y-6">
               <div class="space-y-10">
+                <!-- Experience 1: Aivex (Current) -->
+                <div
+                  class="relative border-l-2 border-gray-200 pl-6 pb-8 last:pb-0"
+                >
+                  <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm motion-safe:animate-pulse-soft"
+                  ></div>
+
+                  <div
+                    class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2"
+                  >
+                    <div class="min-w-0">
+                      <div class="flex items-center gap-2 mb-1">
+                        <h3 class="text-xl font-bold text-gray-900">Aivex</h3>
+                        <span
+                          class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2 py-0.5 rounded"
+                          >현재</span
+                        >
+                      </div>
+                      <p class="text-blue-600 font-medium">
+                        Fullstack Engineer
+                      </p>
+                    </div>
+                    <span
+                      class="text-sm text-gray-500 font-mono mt-1 sm:mt-0 bg-gray-100 px-2 py-1 rounded"
+                      >2026.03 - 재직 중</span
+                    >
+                  </div>
+
+                  <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                    공장에서 제품 불량을 검사하는 장비의 웹 서비스 개발 (기존
+                    제품 + 신규 제품)<br />
+                    프론트엔드(React), 백엔드(NestJS/Prisma/PostgreSQL), 현장
+                    PC용 데스크톱 앱(Go), 배포(Helm/ArgoCD)를 담당. 웹 개발자가
+                    없는 상태에서 합류해 기능 개발과 현장 장애 대응을 수행.
+                  </p>
+
+                  <button
+                    type="button"
+                    class="project-modal-trigger inline-flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition-colors mb-4"
+                    data-modal-id="modal-aivex"
+                    aria-haspopup="dialog"
+                    aria-expanded="false"
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
+                    </svg>
+                    프로젝트 보기
+                  </button>
+
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >React</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >TypeScript</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >NestJS</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >Prisma</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >Redis Stream</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >SSE</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >Go (Wails)</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >Docker</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >Kubernetes</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >Helm</span
+                    >
+                    <span
+                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
+                      >ArgoCD</span
+                    >
+                  </div>
+
+                  <div class="space-y-4">
+                    <!-- Achievement 1.1 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        신규 제품 풀스택 단독 개발
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          주문 관리, 작업 계획, 측정 데이터 수집, 장비 설정,
+                          이력 관리 등 <strong>백엔드 도메인 10종</strong>을
+                          신규 작성
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          장비에서 계속 올라오는 이벤트를 Redis Stream으로 받아
+                          처리하고, 최신 상태는 메모리 캐시로 조회하도록 구성.
+                          장비마다 다른 통신 규격을 하나의 인터페이스로 감싸는
+                          추상화 계층 작성
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          수십만 건 규모의 이력을 엑셀로 내려받는 기능을
+                          <strong>스트리밍 방식</strong>으로 구현해 서버 메모리
+                          사용량을 일정하게 유지
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          화면은 측정값 추이 차트 대시보드, 여러 단계를 순서대로
+                          진행하는 장비 초기 설정 마법사, 실시간 현황 패널, 주문
+                          생성·조회, 로그인 및 페이지별 권한 제어까지 전부 구현
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          전역 알림 토스트, 저장하지 않고 화면을 벗어날 때
+                          막아주는 공통 훅, 화면 밖으로 밀려나지 않는 모달
+                          레이아웃, API 타임아웃과 중복 요청 제거 등 공통 기반
+                          작성
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          실제 장비도 실측 데이터도 확정 기획서도 없이 5개
+                          스프린트 진행 —
+                          <strong>장비 동작을 흉내 내는 목(mock) 서버</strong>를
+                          만들어 다른 팀과 인터페이스를 맞추고, 실장비 없이 전체
+                          흐름을 검증
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >장비 연동을 제외한 화면·API·데이터·인터페이스
+                            검증까지 완료</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                        <a
+                          href="https://velog.io/@yg1110/%EC%84%BC%EC%84%9C%EB%8F%84-%EA%B8%B0%ED%9A%8D%EC%84%9C%EB%8F%84-%EC%97%86%EC%9D%B4-%ED%82%A5%EC%98%A4%ED%94%84%ED%96%88%EB%8B%A4-%EB%B6%88%ED%99%95%EC%8B%A4%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EC%84%AF-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8%EB%A1%9C-%EA%B5%B4%EB%A6%B0-%EA%B8%B0%EB%A1%9D"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 센서도 기획서도 없이 킥오프했다 — 불확실한
+                          프로젝트를 다섯 스프린트로 굴린 기록</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.2 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        디스크가 차서 멈추던 장비 — 대용량 데이터 구조 개선
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          하루 16만 건이 쌓여 디스크가 가득 차면 저장이 실패하고
+                          장비가 멈추는 상태. 오래된 데이터를 지우는 방식은
+                          <strong>삭제 뒷정리(VACUUM)가 디스크를 붙잡아</strong>
+                          오히려 신규 저장을 지연시켜 채택하지 않음
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          테이블을 기간 단위로 쪼개 두고 통째로 버리는
+                          <strong>파티셔닝</strong>으로 전환 — 대상 12개
+                          테이블의 기본 키를 전부 재설계하고 관련 저장 로직 수정
+                          (상위 3개 테이블이 각 약 250GB)
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          장비를 세우지 않고 바꾸기 위해
+                          <strong
+                            >준비 배포 → 테이블 교체 → 최근 데이터만
+                            이관</strong
+                          >
+                          순으로 나누고, 하나가 실패해도 전체가 되돌아가지
+                          않도록 테이블별로 작업을 분리. 공장 라인이 쉬는 시간에
+                          배포
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          몇 주치를 보관할지 설정해 두면 자동으로 새 구간을
+                          만들고 오래된 구간을 지우는 스케줄러를 작성. 되돌릴 수
+                          없는 작업이라 단위 테스트를 함께 작성
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          고객사마다 DB 상태가 제각각이라
+                          <strong
+                            >이력을 남기지 않는 방식에서 남기는 방식(prisma
+                            migrate)으로 이관</strong
+                          >
+                          — 현재 DB가 어떤 상태인지 스스로 판별해 처리 방식을
+                          나누는 스크립트를 작성해, 사람이 매번 판단하지 않아도
+                          되게 함
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >정리 작업이
+                            <strong>10~30분 + 운영자가 직접 쿼리 실행</strong
+                            >에서
+                            <strong>즉시 완료 + 스케줄러 자동 처리</strong>로
+                            변경</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                        <a
+                          href="https://velog.io/@yg1110/%EB%94%94%EC%8A%A4%ED%81%AC%EA%B0%80-%EA%BD%89-%EC%B0%A8%EC%84%9C-%EB%A9%88%EC%B6%98-%EA%B2%80%EC%82%AC-%EC%9E%A5%EB%B9%84-%EC%82%AD%EC%A0%9C%EB%A5%BC-%EC%97%86%EC%95%A0%EA%B8%B0%EA%B9%8C%EC%A7%80-%EB%8C%80%EC%9A%A9%EB%9F%89-%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EC%82%BD%EC%A7%88%EA%B8%B0"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 디스크가 꽉 차서 멈춘 검사 장비 — 대용량 테이블
+                          파티셔닝 삽질기</a
+                        >
+                        <a
+                          href="https://velog.io/@yg1110/%EA%B3%A0%EA%B0%9D%EC%82%AC%EB%A7%88%EB%8B%A4-%EC%A0%9C%EA%B0%81%EA%B0%81%EC%9D%B8-%EC%9A%B4%EC%98%81-DB%EB%A5%BC-prisma-db-push%EC%97%90%EC%84%9C-prisma-migrate%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 고객사마다 제각각인 운영 DB를 prisma db push에서
+                          migrate로 옮기기</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.3 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        장비가 켜지지 않던 장애 원인 추적
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          한동안 쓰지 않던 장비가 다시 켜지지 않는 장애.
+                          재실행·재설치로는 재현되지 않아
+                          <strong
+                            >설정 파일을 하나씩, 다시 항목을 하나씩
+                            바꿔가며</strong
+                          >
+                          원인을 데이터 보관 설정으로 좁힘
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          원인은
+                          <strong
+                            >로그에 건수를 찍으려고 넣어둔 조회 쿼리</strong
+                          >
+                          — 실제 운영 데이터에서는 3억 2,804만 건을 세느라
+                          87초가 걸렸고, 시작 과정이 여기서 멈춰 있었음. 동작에
+                          쓰이지 않는 쿼리라 제거
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          정식 배포 전까지는 코드를 고치지 않고 설정 값만 바꿔
+                          우회하도록 안내하고, 수정 배포는 다음 날 공장 라인이
+                          쉬는 시간에 진행
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >장비 정상 기동. 개발 환경 데이터 양으로는 드러나지
+                            않는 종류의 문제를 코드 리뷰 확인 항목에 추가</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                        <a
+                          href="https://velog.io/@yg1110/%EB%A1%9C%EA%B7%B8-%ED%95%9C-%EC%A4%84-%EC%B0%8D%EC%9E%90%EA%B3%A0-3%EC%96%B5-%EA%B1%B4%EC%9D%84-%EC%84%B8%EA%B3%A0-%EC%9E%88%EC%97%88%EB%8B%A4-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EB%B0%B0%ED%8F%AC-%EB%91%90-%EB%8B%AC-%EB%92%A4%EC%9D%98-%EC%B2%AD%EA%B5%AC%EC%84%9C"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 로그 한 줄 찍자고 3억 건을 세고 있었다 — 파티셔닝
+                          배포 두 달 뒤의 청구서</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.4 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        실시간 연결이 끊긴 채 복구되지 않던 장애 수정
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          장비를 재부팅해도 화면의 연결 끊김 표시가 사라지지
+                          않고 브라우저 새로고침에만 복구되던 문제. 하나의 증상
+                          뒤에 <strong>서로 무관한 원인 3건</strong>이 있었음
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          ① 주기적으로 상태를 조회하는 코드가
+                          <strong>한 번 실패하면 영영 멈추는</strong> 구조 →
+                          실패해도 다음 주기가 계속 돌도록 수정
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          ② 서버가 보내는 생존 신호가
+                          <strong>빈 값이라 브라우저까지 전달되지 않아</strong>,
+                          감시 로직이 멀쩡한 연결을 30초마다 끊고 다시 붙임 →
+                          서버의 신호 전송 형식 수정
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          ③ 데이터가 오면 예약해 둔 재연결을 조건 없이 취소해,
+                          <strong>이미 끊긴 연결에서 복구가 늦어짐</strong> →
+                          연결이 살아 있을 때만 취소하도록 조건 보정
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          다음에 같은 문제가 생기면 근거로 쓸 수 있도록
+                          <strong
+                            >연결 상태 진단 로그를 서버에 모으는 기능</strong
+                          >을 새로 만들고, 그 과정에서 생긴 로그 폭주·누락
+                          문제까지 함께 수정
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >새로고침 없이 자동으로 복구되도록 수정하고, 재발 시
+                            확인할 수 있는 진단 경로를 확보</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                        <a
+                          href="https://velog.io/@yg1110/%EC%97%B0%EA%B2%B0%EC%9D%80-%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94%EB%8D%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80-%EC%95%88-%EC%98%A8%EB%8B%A4-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8%ED%95%B4%EC%95%BC%EB%A7%8C-%EB%B3%B5%EA%B5%AC%EB%90%98%EB%8D%98-SSE-%EA%B3%A0%EC%B9%98%EA%B8%B0"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 연결은 살아있는데 데이터가 안 온다 —
+                          새로고침해야만 복구되던 SSE 고치기</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.5 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        현장 PC용 데스크톱 앱 재작성 (150MB → 10.9MB)
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          웹 화면 하나를 전체화면으로 띄우기만 하는 앱인데
+                          <strong>브라우저 엔진을 통째로 동봉</strong>해 설치
+                          파일이 150MB + 부속 파일 다수. 정작 그 엔진의 기능은
+                          거의 쓰지 않아, PC에 이미 설치된 웹뷰를 빌려 쓰는
+                          방식(Go/Wails)으로 다시 작성
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          <strong>10.9MB 실행 파일 하나 (약 93% 감소)</strong>.
+                          확대·새로고침·폴더 열기 버튼, 확대 배율 저장, 연결
+                          상태 표시와 재시도 중단 조건 구현
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          설치 관리자가 제거·업데이트 도중
+                          <strong
+                            >공용 웹뷰 프로세스를 종료해 같은 PC의 다른 앱까지
+                            꺼지던 문제</strong
+                          >, 다른 프로그램과의 실행 충돌, 작업표시줄 아이콘이
+                          깨지던 문제 수정
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          빌드·배포 파이프라인과 설치 파일 생성을 자동화해, 버전
+                          태그만 올리면 릴리스가 만들어지도록 구성
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >설치 파일 150MB → 10.9MB, 단일 파일 배포로 전환.
+                            브라우저 엔진 보안 업데이트는 OS가 처리하게 됨</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                        <a
+                          href="https://velog.io/@yg1110/%EC%9B%B9-%ED%99%94%EB%A9%B4-%ED%95%98%EB%82%98-%EB%9D%84%EC%9A%B0%EC%9E%90%EA%B3%A0-150MB%EB%A5%BC-%EA%B9%94%EA%B3%A0-%EC%9E%88%EC%97%88%EB%8B%A4-Electron-%EB%9E%98%ED%8D%BC%EB%A5%BC-Go%EB%A1%9C-%EA%B0%88%EC%95%84%EC%97%8E%EA%B8%B0"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 웹 화면 하나 띄우자고 150MB를 깔고 있었다 —
+                          Electron 래퍼를 Go로 갈아엎기</a
+                        >
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.6 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        배포 환경 구성 및 서버 운영 (Kubernetes / Helm / ArgoCD)
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          테스트에 필요하지만 어디에도 올라가 있지 않던
+                          <strong>장비 동작 흉내용 목 서버</strong>를, 배포
+                          설정(Helm 차트)을 새로 작성하고 자동 배포
+                          도구(ArgoCD)에 등록해 개발·운영 환경에 올림
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          메모리 부족으로 반복해서 죽던 백엔드 서버에
+                          <strong>메모리 상한과 할당량을 조정</strong>해 안정화
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          자동 배포가 실패하던 오류 수정, 환경별로 다른 실행
+                          명령을 설정값으로 분리, 개발 서버 사양에 맞춘 이미지
+                          빌드
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >테스트에 필요한 서버를 자동 배포 대상에 편입하고,
+                            반복되던 백엔드 서버 다운을 해소</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Achievement 1.7 -->
+                    <div
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
+                    >
+                      <h4
+                        class="font-semibold text-gray-800 mb-2 flex items-center"
+                      >
+                        <span
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
+                        ></span>
+                        기존 제품 기능 개발 및 유지보수
+                      </h4>
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          <strong>API 방식을 GraphQL에서 REST로 전환</strong> —
+                          서버 쪽 처리와 화면 쪽 호출 코드를 양쪽 다 옮김
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          사용자 역할에 따라 볼 수 있는 화면과 할 수 있는 조작을
+                          나누는 권한 시스템 도입
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          하루 1.8만 건이 쌓이는 알림 이력 화면이
+                          <strong>전체 행을 한 번에 그리느라 멈추던 문제</strong
+                          >를, 화면에 보이는 만큼만 그리는 방식으로 전환. 방법
+                          5가지와 라이브러리 3가지를 비교해 기존 표 스타일을
+                          그대로 쓸 수 있는 쪽을 선택하고, 조회를 날짜 범위
+                          기준으로 바꾸며 인덱스 추가
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          장비를 수동으로 조작하는 화면의 명령 종류 확장,
+                          설정값이 서로 어긋날 때 경고하는 기능, 작업 이력 조회,
+                          데이터가 저장되지 않던 오류 수정 등 현장 요청 대응
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          AI 코딩 도구에 팀 전용 명령을 만들어
+                          <strong>코드 리뷰를 PR 이전 단계로 앞당기고</strong>,
+                          위험한 명령을 막는 안전장치를 구성. PR 작성 소요를 약
+                          5분에서 30초로 단축
+                        </li>
+                      </ul>
+                      <div class="mt-2 pt-2 border-t border-slate-200">
+                        <p class="text-sm font-semibold text-blue-700">
+                          🚀 Impact:
+                          <span class="font-medium text-gray-800"
+                            >오래된 API 구조 정리, 수만 행을 그리느라 멈추던
+                            운영 화면 복구</span
+                          >
+                        </p>
+                      </div>
+                      <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1">
+                        <a
+                          href="https://velog.io/@yg1110/%ED%95%98%EB%A3%A8-1.8%EB%A7%8C-%EA%B1%B4-%EC%95%8C%EB%A6%BC-%EB%A1%9C%EA%B7%B8-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B0%80%EC%83%81-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A1%9C-%EC%B5%9C%EC%A0%81%ED%99%94"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 하루 1.8만 건 알림 로그 테이블, 가상 리스트로
+                          최적화</a
+                        >
+                        <a
+                          href="https://velog.io/@yg1110/Claude-Code-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%A1%9C-%EA%B0%9C%EB%B0%9C-%EC%9E%91%EC%97%85-%ED%9A%A8%EC%9C%A8-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%82%AC%EC%A0%84-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0%EB%B6%80%ED%84%B0-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EA%B9%8C%EC%A7%80"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                          >📝 Claude Code 커맨드로 개발 작업 효율 높이기 — 사전
+                          코드 리뷰부터 컨텍스트 자동화까지</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Experience 1: Team Pass -->
                 <div
                   class="relative border-l-2 border-gray-200 pl-6 pb-8 last:pb-0"
@@ -503,7 +1273,7 @@
                         </h3>
                       </div>
                       <p class="text-blue-600 font-medium">
-                        Fullstack Developer
+                        Frontend Developer
                       </p>
                     </div>
                     <span
@@ -513,11 +1283,9 @@
                   </div>
 
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                    화장품 제조의 시작과 끝을 함께하는 뷰티 플랫폼 '브래닛'
-                    풀스택 개발<br />
-                    프론트엔드(React) 전 범위 및 백엔드 API(NestJS/Prisma)
-                    설계·구현을 수행. 1~2주 단위 스프린트 배포 및 데이터 기반
-                    문제 정의/개선.
+                    화장품 제조 뷰티 플랫폼 '브래닛' 프론트엔드 개발<br />
+                    React 기반 화면 전 범위를 담당. 1~2주 단위 스프린트로
+                    배포하며 공통 컴포넌트 정비와 결제 연동을 수행.
                   </p>
 
                   <button
@@ -568,22 +1336,10 @@
                       class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
                       >Storybook</span
                     >
-                    <span
-                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
-                      >NestJS</span
-                    >
-                    <span
-                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
-                      >Prisma</span
-                    >
-                    <span
-                      class="px-2 py-0.5 text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded"
-                      >PostgreSQL</span
-                    >
                   </div>
 
                   <div class="space-y-4">
-                    <!-- Achievement 1.2 -->
+                    <!-- Achievement 2.1 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -593,74 +1349,42 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        UI 표준화 및 Storybook 기반 공통 컴포넌트 정비(레거시
-                        점진 전환)
+                        공통 컴포넌트 정비 및 상태 관리 구조 정리
                       </h4>
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          버튼/입력/팝업 등 컴포넌트를
+                          버튼·입력·팝업 등 공통 컴포넌트를
                           variant/size/disabled/loading 규격으로 표준화하고
-                          문서화
+                          Storybook으로 문서화
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          “전면 교체” 대신 신규/수정 화면부터 우선 적용해 전환
-                          리스크를 줄이고 점진 확산
+                          전면 교체 대신 신규·수정 화면부터 적용해 레거시를
+                          점진적으로 전환
+                        </li>
+                        <li
+                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
+                        >
+                          서버 데이터는 React Query로 캐싱·동기화하고 UI 상태는
+                          화면 단위로 국소화, 비즈니스 로직은 Custom Hook으로
+                          분리
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >UI 일관성/재사용성 향상으로 유지보수 부담 감소 및
-                            신규 화면 개발 속도 향상</span
+                            >공통 컴포넌트 재사용으로 신규 화면 작업 시간 단축,
+                            상태 관리 책임이 나뉘어 버그 원인 범위 축소</span
                           >
                         </p>
                       </div>
                     </div>
 
-                    <!-- Achievement 1.3 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        UI State / Server State 분리로 상태 관리 책임 정립
-                      </h4>
-                      <ul class="list-none space-y-1.5 ml-1 mb-2">
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          React Query로 서버 상태 캐싱/동기화를 단일 책임으로
-                          관리하고 UI 상태는 화면 단위로 국소화
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          비즈니스 로직을 Custom Hook으로 분리해 컴포넌트는
-                          표현/상호작용에 집중하도록 구조화
-                        </li>
-                      </ul>
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800"
-                            >버그 원인 범위를 축소하고 변경 대응/운영 이슈 처리
-                            비용을 절감</span
-                          >
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Achievement 1.4 -->
-
+                    <!-- Achievement 2.2 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -690,14 +1414,13 @@
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >핵심 동선에서의 이탈/오조작 리스크를 줄이고 체감
-                            안정성을 향상</span
+                            >로딩 중 화면이 밀려 잘못 클릭하는 문제를 줄임</span
                           >
                         </p>
                       </div>
                     </div>
 
-                    <!-- Achievement 1.5 -->
+                    <!-- Achievement 2.3 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -705,30 +1428,31 @@
                         class="font-semibold text-gray-800 mb-2 flex items-center"
                       >
                         <span
-                          class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"
+                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        구독 유료화 결제 연동(E2E, FE 관점)
+                        구독 유료화 결제(토스페이먼츠) 연동
                       </h4>
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          구독 상품/상태 조회 → 결제 팝업(토스페이먼츠) 호출 →
-                          결과 처리 → 서버 동기화 흐름을 연결
+                          구독 상품·상태 조회 → 결제 팝업(토스페이먼츠) 호출 →
+                          결과 처리 → 서버 confirm 호출 → 구독 상태 동기화까지
+                          프론트엔드 구간을 연결
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          성공/실패/취소 등 결제 결과 케이스에 따른 UX와 구독
-                          상태 기반 접근 제어/노출 정책을 정리
+                          성공/실패/취소 등 결제 결과 케이스별 UX와 구독 상태
+                          기반 접근 제어·노출 정책을 정리
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >유료화 도입 이후 결제 흐름의 예외 케이스까지 포함한
-                            운영 안정성을 확보</span
+                            >결제 중단·실패·재시도 케이스까지 처리한 구독 결제
+                            플로우 운영</span
                           >
                         </p>
                       </div>
@@ -766,8 +1490,9 @@
                   <p class="text-gray-600 mb-4 leading-relaxed text-sm">
                     남성 미용의료 플랫폼 '미남이오' 앱/웹과 제모 탐색 서비스
                     '제모데이' 웹 개발<br />
-                    렌더링 전략(SSG/SSR/CSR/ISR) 분리, 지도 UX 최적화, 운영 대응
-                    구조(CodePush)와 결제(PG) 연동 수행.
+                    렌더링 전략(SSG/SSR/ISR/CSR) 분리와 지도 UX 최적화를
+                    중심으로 성능을 개선하고, CodePush 기반 운영 대응 구조와 PG
+                    결제 연동을 함께 수행.
                   </p>
 
                   <button
@@ -808,7 +1533,7 @@
                     >
                   </div>
                   <div class="space-y-4">
-                    <!-- Achievement 2.1 -->
+                    <!-- Achievement 3.1 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -818,55 +1543,45 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        서비스 성능 개선 및 캐싱/렌더링 비용 최적화
+                        렌더링 전략 분리(SSG/SSR/ISR/CSR) 및 캐싱 최적화
                       </h4>
-
-                      <ul
-                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                      >
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          페이지 목적(SEO/개인화)·데이터 변경 주기를 기준으로
-                          정적 성격의 화면은 <strong>SSG/ISR</strong>로 운영
-                          부담을 줄이고 응답 속도를 안정화 개인화·권한 기반
-                          영역은 <strong>SSR</strong>로 구현
+                          페이지 목적(SEO/개인화)과 데이터 변경 주기를 기준으로
+                          정적 성격의 화면은 SSG/ISR, 개인화·권한 기반 영역은
+                          SSR로 분리 적용
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          자주 이동하는 페이지는
-                          <strong>Next Link prefetch</strong>로 선로딩하여 클릭
-                          후 대기 체감을 축소
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          이미지가 많은 화면은
-                          <strong>레이지 로딩</strong>으로 초기 로딩 부담을 분산
+                          자주 이동하는 페이지는 Next Link prefetch로 선로딩,
+                          이미지가 많은 화면은 레이지 로딩으로 초기 로딩 부담을
+                          분산
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
                           React Query 캐싱으로 동일 데이터의 중복 호출을
-                          억제하고, 리페치 시점/규칙을 정리해 핵심 전환 구간의
+                          억제하고 리페치 시점·규칙을 정리해 핵심 전환 구간의
                           불필요한 네트워크/리렌더를 최소화
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                        <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            초기 로딩 지연을 개선하고 중복 요청을 줄여 서버
-                            부하를 완화
-                          </span>
+                          <span class="font-medium text-gray-800"
+                            >초기 로딩 시간 단축 및 동일 데이터 중복 호출
+                            감소</span
+                          >
                         </p>
                       </div>
                     </div>
-                    <!-- Achievement 2.2 -->
+
+                    <!-- Achievement 3.2 -->
                     <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
+                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
                       <h4
                         class="font-semibold text-gray-800 mb-2 flex items-center"
@@ -874,12 +1589,9 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        병원 지도 화면 렌더링 최적화 및 사용자 경험 개선
+                        병원 지도 화면 렌더링 최적화
                       </h4>
-
-                      <ul
-                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                      >
+                      <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
@@ -890,104 +1602,24 @@
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
                           dragend/zoom_changed 이후 디바운스 처리 및 “검색”
-                          트리거 기반으로 요청 타이밍을 통제하여 불필요한
-                          재요청을 감소
+                          트리거 기반으로 요청 타이밍을 통제해 불필요한 재요청을
+                          감소
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          마커는 diff 기반으로 업데이트(기존 마커 재사용/필요
-                          마커만 추가·제거)하고, 지도 렌더링 로직을 모듈화해
-                          화면 튐 현상을 제거
+                          마커는 diff 기반으로 업데이트(기존 마커 재사용, 필요한
+                          마커만 추가·제거)하고 지도 렌더링 로직을 모듈화해 화면
+                          튐 현상을 제거
                         </li>
                       </ul>
-
                       <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700 mt-2">
+                        <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            지도 화면 반응성 개선 및 불필요한 API 호출 감소,
-                            사용자 지도 이용 만족도 향상
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Achievement 2.3 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        앱 업데이트 및 장애 대응을 고려한 유지보수 구조 개선(RN)
-                      </h4>
-
-                      <ul
-                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                      >
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          WebView 구조 적용으로 주요 화면 웹 관리
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          CodePush 도입으로 즉시 반영 환경 구축
-                        </li>
-                      </ul>
-
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700 mt-2">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            장애 발생 시 1일 이내 대응 가능, 콘텐츠·기능 수정
-                            배포 주기 단축
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Achievement 2.4 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100 mt-4"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        토스페이먼츠 결제(PG) E2E 연동(FE 관점)
-                      </h4>
-
-                      <ul
-                        class="list-none space-y-1.5 ml-1 mb-2 text-sm text-gray-700"
-                      >
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          결제 시작(prepare) → 결제 위젯 실행 → 결과
-                          수신(성공/실패) → 서버 confirm 호출 → 완료/후속 플로우
-                          동기화
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          결제 중단/실패/재시도 등 예외 케이스에 대한 UX 및 상태
-                          동기화 흐름을 정리
-                        </li>
-                      </ul>
-
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700 mt-2">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800">
-                            결제 예외 케이스를 포함한 안정적인 결제 플로우 운영
-                            기반을 확보
-                          </span>
+                          <span class="font-medium text-gray-800"
+                            >지도 이동 시 발생하던 깜빡임 제거 및 재조회 호출
+                            감소</span
+                          >
                         </p>
                       </div>
                     </div>
@@ -1065,7 +1697,7 @@
                   </div>
 
                   <div class="space-y-4">
-                    <!-- Achievement 3.1 -->
+                    <!-- Achievement 4.1 -->
                     <div
                       class="bg-slate-50 p-4 rounded-lg border border-slate-100"
                     >
@@ -1075,65 +1707,29 @@
                         <span
                           class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
                         ></span>
-                        훈련사 일지 기능 개발(RN)
+                        반려동물 앱 신규 기능 개발 (React Native)
                       </h4>
                       <ul class="list-none space-y-1.5 ml-1 mb-2">
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          훈련사 일지 작성/조회 플로우를 React Native에서
-                          구현(화면 구성, 상태 관리, 입력/검증, API 연동 등).
+                          훈련사 일지 작성·조회 플로우와 반려동물 동반 호텔
+                          탐색·상세·예약 문의 화면을 React Native로 구현
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          운영/사용자 관점에서 작성 동선(입력 저장/수정 확인)의
-                          UX를 안정화.
+                          화면 구성, 상태 관리, 입력/검증, API 연동과
+                          리스트-상세 간 데이터 전달, 필터·정렬 등 탐색 UX를
+                          담당
                         </li>
                       </ul>
                       <div class="mt-2 pt-2 border-t border-slate-200">
                         <p class="text-sm font-semibold text-blue-700">
                           🚀 Impact:
                           <span class="font-medium text-gray-800"
-                            >훈련 기록 관리 기능의 사용성 확보 및 앱 기능 범위
-                            확장
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <!-- Achievement 3.2 -->
-                    <div
-                      class="bg-slate-50 p-4 rounded-lg border border-slate-100"
-                    >
-                      <h4
-                        class="font-semibold text-gray-800 mb-2 flex items-center"
-                      >
-                        <span
-                          class="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"
-                        ></span>
-                        반려동물 동반 호텔 기능 개발(RN)
-                      </h4>
-                      <ul class="list-none space-y-1.5 ml-1 mb-2">
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          반려동물 동반 가능 호텔 탐색/상세, 예약/문의 관련 화면
-                          및 사용자 흐름을 React Native에서 구현.
-                        </li>
-                        <li
-                          class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
-                        >
-                          리스트/상세 화면 간 데이터 전달, 필터/정렬 등 탐색
-                          UX를 개선.
-                        </li>
-                      </ul>
-                      <div class="mt-2 pt-2 border-t border-slate-200">
-                        <p class="text-sm font-semibold text-blue-700">
-                          🚀 Impact:
-                          <span class="font-medium text-gray-800"
-                            >신규 카테고리(동반 호텔) 기능을 앱 내로 확장하여
-                            사용자 탐색 경험 강화
-                          </span>
+                            >훈련사 일지와 동반 호텔 두 기능을 앱에 추가</span
+                          >
                         </p>
                       </div>
                     </div>
@@ -1215,6 +1811,308 @@
           </section>
 
           <!-- Backend Side Project (In Progress) -->
+          <!-- Writing -->
+          <section class="mb-10 reveal">
+            <h2
+              class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-gray-200 pb-2 flex items-center"
+            >
+              <span class="w-8 h-1 bg-blue-600 rounded-full mr-3"></span>
+              Writing
+            </h2>
+            <p class="text-sm text-gray-500 mb-5 leading-relaxed">
+              업무에서 실제로 겪은 문제를
+              <strong class="text-gray-700"
+                >배경 · 시도한 방법 · 기각한 이유 · 결과</strong
+              >
+              순으로 정리해 공개하고 있습니다. ·
+              <a
+                href="https://velog.io/@yg1110/posts"
+                target="_blank"
+                rel="noopener"
+                class="text-blue-600 font-semibold hover:underline"
+                >velog.io/@yg1110</a
+              >
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div>
+                <h3 class="text-sm font-bold text-gray-700 mb-1">
+                  운영 데이터베이스
+                </h3>
+                <p class="text-xs text-gray-500 mb-3">
+                  멈추면 안 되는 DB의 구조를 바꾼 작업
+                </p>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EB%94%94%EC%8A%A4%ED%81%AC%EA%B0%80-%EA%BD%89-%EC%B0%A8%EC%84%9C-%EB%A9%88%EC%B6%98-%EA%B2%80%EC%82%AC-%EC%9E%A5%EB%B9%84-%EC%82%AD%EC%A0%9C%EB%A5%BC-%EC%97%86%EC%95%A0%EA%B8%B0%EA%B9%8C%EC%A7%80-%EB%8C%80%EC%9A%A9%EB%9F%89-%ED%85%8C%EC%9D%B4%EB%B8%94-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EC%82%BD%EC%A7%88%EA%B8%B0"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          디스크가 꽉 차서 멈춘 검사 장비 — 대용량 테이블
+                          파티셔닝 삽질기
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.06</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        데이터를 지우는 방식을 기각하고 테이블을 쪼개는 구조로
+                        간 이유, 장비를 세우지 않고 바꾼 절차
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EA%B3%A0%EA%B0%9D%EC%82%AC%EB%A7%88%EB%8B%A4-%EC%A0%9C%EA%B0%81%EA%B0%81%EC%9D%B8-%EC%9A%B4%EC%98%81-DB%EB%A5%BC-prisma-db-push%EC%97%90%EC%84%9C-prisma-migrate%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          고객사마다 제각각인 운영 DB를 prisma db push에서
+                          migrate로 옮기기
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.06</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        고객사마다 상태가 다른 운영 DB에 변경 이력 관리 체계를
+                        도입한 방법
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EB%A1%9C%EA%B7%B8-%ED%95%9C-%EC%A4%84-%EC%B0%8D%EC%9E%90%EA%B3%A0-3%EC%96%B5-%EA%B1%B4%EC%9D%84-%EC%84%B8%EA%B3%A0-%EC%9E%88%EC%97%88%EB%8B%A4-%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D-%EB%B0%B0%ED%8F%AC-%EB%91%90-%EB%8B%AC-%EB%92%A4%EC%9D%98-%EC%B2%AD%EA%B5%AC%EC%84%9C"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          로그 한 줄 찍자고 3억 건을 세고 있었다 — 파티셔닝 배포
+                          두 달 뒤의 청구서
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.08</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        로그에 건수를 찍으려던 쿼리가 3억 건을 세느라 장비
+                        기동을 막던 장애의 추적 과정
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-gray-700 mb-1">
+                  실시간 · 성능
+                </h3>
+                <p class="text-xs text-gray-500 mb-3">
+                  느리거나 멈추던 것들을 고친 작업
+                </p>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EC%97%B0%EA%B2%B0%EC%9D%80-%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94%EB%8D%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B0%80-%EC%95%88-%EC%98%A8%EB%8B%A4-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8%ED%95%B4%EC%95%BC%EB%A7%8C-%EB%B3%B5%EA%B5%AC%EB%90%98%EB%8D%98-SSE-%EA%B3%A0%EC%B9%98%EA%B8%B0"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          연결은 살아있는데 데이터가 안 온다 — 새로고침해야만
+                          복구되던 SSE 고치기
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.08</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        하나의 연결 끊김 증상 뒤에 있던 서로 무관한 원인 3건을
+                        분리해 수정한 과정
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%ED%95%98%EB%A3%A8-1.8%EB%A7%8C-%EA%B1%B4-%EC%95%8C%EB%A6%BC-%EB%A1%9C%EA%B7%B8-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B0%80%EC%83%81-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A1%9C-%EC%B5%9C%EC%A0%81%ED%99%94"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          하루 1.8만 건 알림 로그 테이블, 가상 리스트로 최적화
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.06</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        수만 행을 그리다 멈추는 표를 고치며 방법
+                        5가지·라이브러리 3가지를 비교한 기준
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EC%9B%B9-%ED%99%94%EB%A9%B4-%ED%95%98%EB%82%98-%EB%9D%84%EC%9A%B0%EC%9E%90%EA%B3%A0-150MB%EB%A5%BC-%EA%B9%94%EA%B3%A0-%EC%9E%88%EC%97%88%EB%8B%A4-Electron-%EB%9E%98%ED%8D%BC%EB%A5%BC-Go%EB%A1%9C-%EA%B0%88%EC%95%84%EC%97%8E%EA%B8%B0"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          웹 화면 하나 띄우자고 150MB를 깔고 있었다 — Electron
+                          래퍼를 Go로 갈아엎기
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.08</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        데스크톱 앱을 다시 만들며 따진 용량과 통제력의
+                        트레이드오프
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-sm font-bold text-gray-700 mb-1">
+                  일하는 방식
+                </h3>
+                <p class="text-xs text-gray-500 mb-3">
+                  프로젝트 진행 방식과 개발 프로세스
+                </p>
+                <ul class="space-y-2">
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EC%84%BC%EC%84%9C%EB%8F%84-%EA%B8%B0%ED%9A%8D%EC%84%9C%EB%8F%84-%EC%97%86%EC%9D%B4-%ED%82%A5%EC%98%A4%ED%94%84%ED%96%88%EB%8B%A4-%EB%B6%88%ED%99%95%EC%8B%A4%ED%95%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%8B%A4%EC%84%AF-%EC%8A%A4%ED%94%84%EB%A6%B0%ED%8A%B8%EB%A1%9C-%EA%B5%B4%EB%A6%B0-%EA%B8%B0%EB%A1%9D"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          센서도 기획서도 없이 킥오프했다 — 불확실한 프로젝트를
+                          다섯 스프린트로 굴린 기록
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.08</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        실제 장비와 기획서 없이 5개 스프린트를 진행하며 팀과
+                        맞춰간 방식
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/Claude-Code-%EC%BB%A4%EB%A7%A8%EB%93%9C%EB%A1%9C-%EA%B0%9C%EB%B0%9C-%EC%9E%91%EC%97%85-%ED%9A%A8%EC%9C%A8-%EB%86%92%EC%9D%B4%EA%B8%B0-%EC%82%AC%EC%A0%84-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0%EB%B6%80%ED%84%B0-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EA%B9%8C%EC%A7%80"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          Claude Code 커맨드로 개발 작업 효율 높이기 — 사전 코드
+                          리뷰부터 컨텍스트 자동화까지
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.06</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        AI 코딩 도구에 팀 전용 명령을 만들어 리뷰·PR 작업을
+                        자동화한 구성
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%EB%AC%BC%EC%96%B4%EB%B3%B4%EB%8D%98-%EC%82%AC%EB%9E%8C%EC%97%90%EC%84%9C-%EB%A8%BC%EC%A0%80-%EC%A0%9C%EC%95%88%ED%95%98%EB%8A%94-%EC%82%AC%EB%9E%8C%EC%9C%BC%EB%A1%9C-%ED%92%80%EC%8A%A4%ED%83%9D-%EC%88%98%EC%8A%B5-3%EA%B0%9C%EC%9B%94"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          물어보던 사람에서, 먼저 제안하는 사람으로 — 풀스택
+                          수습 3개월
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.06</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        풀스택 수습 3개월 회고
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://velog.io/@yg1110/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-3%EB%85%84%EC%B0%A8-%ED%92%80%EC%8A%A4%ED%83%9D%EC%9C%BC%EB%A1%9C-%EC%B2%AB-%EA%B1%B8%EC%9D%8C%EC%9D%84-%EB%97%80-1.5%EA%B0%9C%EC%9B%94"
+                      target="_blank"
+                      rel="noopener"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
+                    >
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          프론트엔드 3년차, 풀스택으로 첫 걸음을 뗀 1.5개월
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.06</span
+                        >
+                      </div>
+                      <p class="text-xs text-gray-500 mt-1 leading-relaxed">
+                        풀스택 전향 후 첫 1.5개월 회고
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section class="mb-10">
             <h2
               class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-gray-200 pb-3 flex items-center gap-3"
@@ -1267,6 +2165,81 @@
             </div>
 
             <div class="space-y-6">
+              <!-- Loopin -->
+              <div
+                class="bg-white border border-gray-100 rounded-3xl p-6 reveal"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4"
+                >
+                  <div>
+                    <div class="flex items-center gap-3 mb-1 flex-wrap">
+                      <h3
+                        class="text-2xl font-extrabold text-gray-900 tracking-tight"
+                      >
+                        Loopin
+                      </h3>
+                      <span
+                        class="text-[10px] font-bold flex-shrink-0 uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-1 rounded border border-amber-100"
+                      >
+                        진행중
+                      </span>
+                    </div>
+                    <p class="text-blue-600 font-semibold text-sm">2026.07</p>
+                  </div>
+                  <div class="flex gap-4">
+                    <a
+                      href="https://github.com/yg1110/loopin"
+                      target="_blank"
+                      rel="noreferrer"
+                      class="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg>
+                      <span>Source Code</span>
+                    </a>
+                  </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                  습관·루틴을 매일 체크하고 연속 기록(streak)을 쌓는 PWA. 습관
+                  기록은 기기 로컬에 저장하고, 올린 인증만 공개 피드로 공유.
+                  Service Worker와 Web Push로 체크 알림을 발송
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold border border-blue-100"
+                    >React 19</span
+                  >
+                  <span
+                    class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold border border-blue-100"
+                    >Vite</span
+                  >
+                  <span
+                    class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold border border-blue-100"
+                    >PWA (Workbox)</span
+                  >
+                  <span
+                    class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold border border-blue-100"
+                    >Web Push</span
+                  >
+                  <span
+                    class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-semibold border border-indigo-100"
+                    >Supabase</span
+                  >
+                  <span
+                    class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold border border-blue-100"
+                    >Expo / React Native</span
+                  >
+                </div>
+              </div>
+
               <!-- Bookorry -->
               <div
                 class="bg-white border border-gray-100 rounded-3xl p-6 reveal"
@@ -1290,27 +2263,6 @@
                     <p class="text-blue-600 font-semibold text-sm">2026.03</p>
                   </div>
                   <div class="flex gap-4">
-                    <a
-                      href="https://bookorry.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                      class="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm"
-                    >
-                      <svg
-                        class="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        ></path>
-                      </svg>
-                      <span>Live Demo</span>
-                    </a>
                     <a
                       href="https://github.com/yg1110/bookorry"
                       target="_blank"
@@ -1430,27 +2382,6 @@
                     <p class="text-blue-600 font-semibold text-sm">2026.03</p>
                   </div>
                   <div class="flex gap-4">
-                    <a
-                      href="https://sprintlog.vercel.app"
-                      target="_blank"
-                      rel="noreferrer"
-                      class="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition-colors font-medium text-sm"
-                    >
-                      <svg
-                        class="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        ></path>
-                      </svg>
-                      <span>Live Demo</span>
-                    </a>
                     <a
                       href="https://github.com/yg1110/sprintlog"
                       target="_blank"
