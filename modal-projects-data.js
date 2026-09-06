@@ -7,7 +7,7 @@ const PROJECT_MODAL_DATA = [
     modalId: "modal-team-pass",
     panelId: "panel-team-pass",
     title: "팀패스 (Team Pass)",
-    period: "2025.04 - 2025.12 (8개월)",
+    period: "2025.04 - 2026.01 (10개월)",
     desc: "화장품 제조 뷰티 플랫폼 '브래닛'의 프론트엔드(React) 전 범위를 담당한 프로젝트입니다.",
     hideImagesOnMobile: true,
     pcScreenshotLayout: true,
