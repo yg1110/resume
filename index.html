@@ -506,7 +506,7 @@
               대표 성과
             </h2>
             <p class="text-sm text-gray-500 mb-5 leading-relaxed">
-              Aivex에서 맡았던 작업 다섯 가지입니다. 각 항목의 배경과 검토한 선택지,
+              Aivex에서 맡았던 작업입니다. 각 항목의 배경과 검토한 선택지,
               무엇을 왜 택했는지는 기술 블로그에 정리해 두었습니다.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
@@ -536,11 +536,11 @@
                 class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col"
               >
                 <p class="text-3xl font-extrabold text-blue-600 leading-none">
-                  93<span class="text-base font-bold text-blue-500">%</span>
+                  11<span class="text-base font-bold text-blue-500">만 건</span>
                 </p>
                 <p class="text-sm text-gray-600 mt-2 leading-relaxed">
-                  데스크톱 앱 설치 파일 감소 <strong>150MB → 10.9MB</strong><br />
-                  <span class="text-xs text-gray-500">약 1/14 · 단일 exe 배포</span>
+                  스토리지 사고 후 복구한 검사 데이터<br />
+                  <span class="text-xs text-gray-500">112,835건 · 이미지 68,990건 복구</span>
                 </p>
               </div>
               <div
@@ -683,7 +683,33 @@
                   >📝 센서 없이 시작한 프로젝트, 다섯 스프린트 동안 한 일</a
                 >
               </div>
-              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5 md:col-span-2">
+              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                <div class="flex flex-wrap gap-2 mb-2">
+                  <span
+                    class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
+                    >Recovery</span
+                  >
+                </div>
+                <h3 class="text-base font-bold text-gray-900 mb-2">
+                  스토리지가 찬 뒤 남은 11만 건
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                  용량을 확보한 뒤에도 밀린 <strong>112,835건</strong>이 자동으로 복구되지 않았습니다.
+                  업로드 에이전트가 <strong>최근 24시간의 미완료 건만</strong> 조회하고, 검사 전송은 이미지 상태가 확정되지 않은 건을 걸러내던 구조 —
+                  <strong>앞단의 정체가 뒷단의 침묵으로</strong> 이어졌습니다.
+                  복구 방식 <strong>3가지를 비교</strong>해 기간을 지정하는 신규 조회 경로를 택했고, 상시 폴링에 분기를 남기지 않도록
+                  <strong>복구 전용 엔드포인트를 분리</strong>했습니다. 검사 결과는 <strong>전 구간</strong>, 이미지는
+                  <strong>68,990건</strong> 복구. 원본이 이미 지워진 40,050건은 <strong>'없음 확정'으로 기록</strong>해 남겼습니다.
+                </p>
+                <a
+                  href="https://velog.io/@yg1110/%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EA%B0%80-%EC%B0%AC-%EB%92%A4-%EB%82%A8%EC%9D%80-11%EB%A7%8C-%EA%B1%B4-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EB%B3%B5%EA%B5%AC%ED%95%A0-%EC%88%98-%EC%9E%88%EC%97%88%EB%82%98"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-1 text-xs font-medium text-blue-600 hover:text-blue-800 hover:underline"
+                  >📝 스토리지가 찬 뒤 남은 11만 건 — 어디까지 복구할 수 있었나</a
+                >
+              </div>
+              <div class="bg-slate-50 border border-slate-100 rounded-xl p-5">
                 <div class="flex flex-wrap gap-2 mb-2">
                   <span
                     class="text-[10px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded"
@@ -3067,20 +3093,37 @@
             );
           });
 
+          const show = (el) => {
+            el.classList.remove("opacity-0", "translate-y-3");
+            el.classList.add("opacity-100", "translate-y-0");
+          };
+
+          // threshold를 0으로 둔다.
+          // 뷰포트보다 긴 섹션(경력 사항 등)은 비율이 threshold에 영원히 못 미쳐
+          // 콜백이 발화하지 않고 opacity-0 상태로 남는다.
           const io = new IntersectionObserver(
             (entries) => {
               entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                  entry.target.classList.remove("opacity-0", "translate-y-3");
-                  entry.target.classList.add("opacity-100", "translate-y-0");
+                  show(entry.target);
                   io.unobserve(entry.target); // 한 번만 실행
                 }
               });
             },
-            { threshold: 0.12 },
+            { threshold: 0, rootMargin: "0px 0px -8% 0px" },
           );
 
           reveals.forEach((el) => io.observe(el));
+
+          // 안전장치: 어떤 이유로든 관찰자가 발화하지 않으면 3초 뒤 전부 노출
+          setTimeout(() => {
+            reveals.forEach((el) => {
+              if (el.classList.contains("opacity-0")) {
+                show(el);
+                io.unobserve(el);
+              }
+            });
+          }, 3000);
         </script>
       </div>
       <button
