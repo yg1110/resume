@@ -1289,14 +1289,14 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          <strong>[상황]</strong> 검사 이미지를 장기 보관하는 스토리지가 가득 차 신규 저장이 막혔고, 용량을 확보한 뒤에도 밀린 <strong>112,835건</strong>이 자동으로 복구되지 않음.
+                          검사 이미지를 장기 보관하는 스토리지가 가득 차 신규 저장이 막혔고, 용량을 확보한 뒤에도 밀린 <strong>112,835건</strong>이 자동으로 복구되지 않음.
                           업로드 에이전트가 <strong>최근 24시간의 미완료 건만 조회</strong>하고 검사 데이터 전송은 이미지 상태가 확정되지 않은 건을 걸러내던 구조라,
                           <strong>앞단의 정체가 뒷단의 침묵으로</strong> 이어짐. 백엔드와 업로드 에이전트를 담당해 세 팀이 걸친 사고의 중간에서 대응
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          <strong>[조치]</strong> 사이트별로 원본 이미지 폴더 · 스토리지 적재 여부 · 검사 데이터 서버 상태를 대조해 11만 건을
+                          사이트별로 원본 이미지 폴더 · 스토리지 적재 여부 · 검사 데이터 서버 상태를 대조해 11만 건을
                           <strong>복구 대상 / 원본 소실 확정 / 결과만 선전송</strong> 세 갈래로 분류.
                           고화질 촬상 사이트는 보관 규칙에 걸려 9일치 원본이 이미 지워졌고 저화질 사이트는 18일치가 온전해,
                           <strong>같은 사고인데도 복구 가능 범위가 갈림</strong>
@@ -1304,13 +1304,13 @@
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          <strong>[조치]</strong> 복구 방식 3가지를 비교해 <strong>기간을 지정하는 신규 조회 경로</strong>를 선택 —
+                          복구 방식 3가지를 비교해 <strong>기간을 지정하는 신규 조회 경로</strong>를 선택 —
                           조회 기간 제한을 푸는 안은 아직 저장이 끝나지 않은 방금 찍힌 검사를 실패로 확정할 위험이 있었고, 이미지를 포기하는 안은 영구 손실이었기 때문
                         </li>
                         <li
                           class="text-gray-700 text-sm pl-4 relative before:content-['-'] before:absolute before:left-0 before:text-gray-400"
                         >
-                          <strong>[조치]</strong> 상시 폴링 API에 분기를 넣지 않고 <strong>복구 전용 엔드포인트와 1회성 실행 경로를 분리</strong> —
+                          상시 폴링 API에 분기를 넣지 않고 <strong>복구 전용 엔드포인트와 1회성 실행 경로를 분리</strong> —
                           복구가 끝난 뒤에도 조건이 상시 경로에 남는 것을 막기 위해서.
                           사후 정리에서는 새 기능이 도는지가 아니라 <strong>상시 조회가 이전과 동일한 쿼리를 만드는지</strong>를 테스트로 고정
                         </li>
@@ -2179,15 +2179,19 @@
                       href="https://velog.io/@yg1110/%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80%EA%B0%80-%EC%B0%AC-%EB%92%A4-%EB%82%A8%EC%9D%80-11%EB%A7%8C-%EA%B1%B4-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80-%EB%B3%B5%EA%B5%AC%ED%95%A0-%EC%88%98-%EC%9E%88%EC%97%88%EB%82%98"
                       target="_blank"
                       rel="noopener"
-                      class="block group"
+                      class="group block bg-white border border-gray-200 rounded-lg p-3 hover:border-blue-300 hover:shadow-sm transition-all"
                     >
-                      <p
-                        class="text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition-colors"
-                      >
-                        스토리지가 찬 뒤 남은 11만 건 — 어디까지 복구할 수
-                        있었나
-                      </p>
-                      <span class="text-xs text-gray-400">2026.09</span>
+                      <div class="flex items-start justify-between gap-3">
+                        <p
+                          class="text-sm font-semibold text-gray-800 group-hover:text-blue-700 leading-snug"
+                        >
+                          스토리지가 찬 뒤 남은 11만 건 — 어디까지 복구할 수 있었나
+                        </p>
+                        <span
+                          class="text-xs text-gray-400 font-mono shrink-0 mt-0.5"
+                          >2026.09</span
+                        >
+                      </div>
                       <p class="text-xs text-gray-500 mt-1 leading-relaxed">
                         용량 사고로 밀린 112,835건을 세 갈래로 분류하고,
                         상시 경로를 건드리지 않는 복구 전용 경로를 만든 과정
